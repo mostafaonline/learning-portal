@@ -97,7 +97,7 @@
 <section id="dummy">
 </section>
 <section id="about">
-    <article>
+    <div class="article">
     <h3>Who We Are?</h3>
 
     <p>The Islamic International Foundation
@@ -108,7 +108,7 @@
         Austrailia to promote mutual understanding and
         cultural exchange.<a href="">Read More</a>
     </p>
-    </article>
+    </div>
     <video id="about-video" controls="controls" draggable="false" height="190px" width="340" >
         <!--<source src="hijab.present.sound-plaayer.mp4" type="video/mp4">-->
         <!--<source src="hijab.present.sound-plaayer.ogg" type="video/ogg">-->
@@ -212,42 +212,57 @@
 
     <ul>
         <li>
-            <a href="question url">
-                <img src="img/profile.gif">
-                <a>Member ID</a><br> Asked:
-                <p>body of question</p>
+            <a href="profile" class="profile">
+            <img src="img/profile.gif">
+            Member ID
+            </a>
+
+            <a href="question url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
 
         <li>
-            <a href="question url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Asked:
-                <p>body of question</p>
+                Member ID
+            </a>
+
+            <a href="question url" class="post">
+                <p>Is there hijab for men?</p>
             </a>
         </li>
 
         <li>
-            <a href="question url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Asked:
-                <p>body of question</p>
+                Member ID
+            </a>
+
+            <a href="question url" class="post">
+                <p>Can a Muslim woman wear hijab and have makeup on without covering her face?</p>
             </a>
         </li>
 
         <li>
-            <a href="question url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Asked:
-                <p>body of question</p>
+                Member ID
+            </a>
+
+            <a href="question url" class="post">
+                <p>	Does hijab protect women from molestation?</p>
             </a>
         </li>
 
         <li>
-            <a href="question url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Asked:
-                <p>body of question</p>
+                Member ID
+            </a>
+
+            <a href="question url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
     </ul>
@@ -263,42 +278,58 @@
 
     <ul>
         <li>
-            <a href="discussion url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Said:
-                <p>body of post</p>
+                Member ID
+            </a>
+
+            <a href="discussion url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
 
         <li>
-            <a href="discussion url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Said:
-                <p>body of post</p>
+                Member ID
+            </a>
+
+            <a href="discussion url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
 
         <li>
-            <a href="discussion url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Said:
-                <p>body of post</p>
+                Member ID
+            </a>
+
+            <a href="discussion url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
 
         <li>
-            <a href="discussion url">
+
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Said:
-                <p>body of post</p>
+                Member ID
+            </a>
+
+            <a href="discussion url" class="post">
+                <p>Well it’s the Qur’an that says that. And as the Qur’an says.</p>
             </a>
         </li>
 
         <li>
-            <a href="discussion url">
+            <a href="profile" class="profile">
                 <img src="img/profile.gif">
-                <a>Member ID</a><br> Said:
-                <p>body of post</p>
+                Member ID
+            </a>
+
+            <a href="discussion url" class="post">
+                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
             </a>
         </li>
     </ul>
@@ -602,7 +633,7 @@
 
         $('html, body').animate({
             scrollTop: $('#'+this.title).offset().top -175
-        }, 2000);
+        }, 1000);
 
         $('a.active').removeClass('active');
         $(this).addClass('active');

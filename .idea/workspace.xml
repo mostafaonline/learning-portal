@@ -22,15 +22,15 @@
     <groupTables value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46238428">
+    <splitter split-orientation="horizontal" split-proportion="0.40173912">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.17258886">
+        <splitter split-orientation="horizontal" split-proportion="0.30226701">
           <split-first>
             <leaf>
               <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/css/screen.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="752" column="0" selection-start="21206" selection-end="21206" vertical-scroll-proportion="1.0">
+                    <state line="757" column="0" selection-start="21282" selection-end="21282" vertical-scroll-proportion="0.9104651">
                       <folding />
                     </state>
                   </provider>
@@ -40,10 +40,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="screen.sass" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sass/screen.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="328" column="19" selection-start="5935" selection-end="5935" vertical-scroll-proportion="0.41162792">
+                    <state line="548" column="10" selection-start="9552" selection-end="9552" vertical-scroll-proportion="0.96046513">
                       <folding />
                     </state>
                   </provider>
@@ -55,18 +55,16 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="603" column="58" selection-start="18331" selection-end="18331" vertical-scroll-proportion="0.5311751">
+                <state line="320" column="78" selection-start="11021" selection-end="11021" vertical-scroll-proportion="0.6582734">
                   <folding>
+                    <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -88,8 +86,8 @@
         <option value="$PROJECT_DIR$/css/asd.css" />
         <option value="$PROJECT_DIR$/sass/asd.sass" />
         <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/screen.sass" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -285,7 +283,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.078975454" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07950907" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -357,13 +355,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="14" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -379,13 +375,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="8" selection-start="1751" selection-end="1751" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -401,13 +395,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="28" selection-start="2000" selection-end="2000" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -428,13 +420,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="265" column="0" selection-start="6525" selection-end="6525" vertical-scroll-proportion="0.0">
           <folding>
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,30 +456,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="752" column="0" selection-start="21206" selection-end="21206" vertical-scroll-proportion="1.0">
+        <state line="757" column="0" selection-start="21282" selection-end="21282" vertical-scroll-proportion="0.9104651">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="548" column="10" selection-start="9552" selection-end="9552" vertical-scroll-proportion="0.96046513">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="603" column="58" selection-start="18331" selection-end="18331" vertical-scroll-proportion="0.5311751">
+        <state line="320" column="78" selection-start="11021" selection-end="11021" vertical-scroll-proportion="0.6582734">
           <folding>
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#5;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#footer#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="19" selection-start="5935" selection-end="5935" vertical-scroll-proportion="0.41162792">
-          <folding />
         </state>
       </provider>
     </entry>
