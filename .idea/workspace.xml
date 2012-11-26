@@ -36,7 +36,7 @@
               <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/css/screen.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="784" column="0" selection-start="22062" selection-end="22062" vertical-scroll-proportion="0.9104651">
+                    <state line="796" column="0" selection-start="22531" selection-end="22531" vertical-scroll-proportion="0.9104651">
                       <folding />
                     </state>
                   </provider>
@@ -46,10 +46,10 @@
           </split-first>
           <split-second>
             <leaf>
-              <file leaf-file-name="screen.sass" pinned="false" current="false" current-in-tab="true">
+              <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sass/screen.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="351" column="12" selection-start="6474" selection-end="6474" vertical-scroll-proportion="0.47544912">
+                    <state line="753" column="4" selection-start="14119" selection-end="14119" vertical-scroll-proportion="0.4227545">
                       <folding />
                     </state>
                   </provider>
@@ -61,10 +61,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="60" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.33250928">
+                <state line="566" column="28" selection-start="17155" selection-end="17155" vertical-scroll-proportion="0.44964027">
                   <folding />
                 </state>
               </provider>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/css/asd.css" />
         <option value="$PROJECT_DIR$/sass/asd.sass" />
         <option value="$PROJECT_DIR$/css/screen.css" />
-        <option value="$PROJECT_DIR$/sass/screen.sass" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sass/screen.sass" />
       </list>
     </option>
   </component>
@@ -442,21 +442,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="784" column="0" selection-start="22062" selection-end="22062" vertical-scroll-proportion="0.9104651">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="351" column="12" selection-start="6474" selection-end="6474" vertical-scroll-proportion="0.47544912">
+        <state line="796" column="0" selection-start="22531" selection-end="22531" vertical-scroll-proportion="0.9104651">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="60" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.33250928">
+        <state line="566" column="28" selection-start="17155" selection-end="17155" vertical-scroll-proportion="0.44964027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="753" column="4" selection-start="14119" selection-end="14119" vertical-scroll-proportion="0.4227545">
           <folding />
         </state>
       </provider>
