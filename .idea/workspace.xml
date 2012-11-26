@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="412c1596-3719-4ba0-aa12-8e249e19f305" name="Default" comment="git and rubymine integrated">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/482c0df48161a13f1acae59b9b74b268fa143c20/screen.sassc" afterPath="$PROJECT_DIR$/.sass-cache/482c0df48161a13f1acae59b9b74b268fa143c20/screen.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="$PROJECT_DIR$/css/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.sass" afterPath="$PROJECT_DIR$/sass/screen.sass" />
@@ -36,7 +35,7 @@
               <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/css/screen.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="796" column="0" selection-start="22531" selection-end="22531" vertical-scroll-proportion="0.9104651">
+                    <state line="826" column="0" selection-start="23554" selection-end="23554" vertical-scroll-proportion="0.9104651">
                       <folding />
                     </state>
                   </provider>
@@ -49,7 +48,7 @@
               <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/sass/screen.sass">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="753" column="4" selection-start="14119" selection-end="14119" vertical-scroll-proportion="0.4227545">
+                    <state line="775" column="8" selection-start="14538" selection-end="14538" vertical-scroll-proportion="0.3005988">
                       <folding />
                     </state>
                   </provider>
@@ -64,7 +63,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="566" column="28" selection-start="17155" selection-end="17155" vertical-scroll-proportion="0.44964027">
+                <state line="586" column="12" selection-start="17650" selection-end="17650" vertical-scroll-proportion="0.735012">
                   <folding />
                 </state>
               </provider>
@@ -284,7 +283,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -442,21 +441,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="796" column="0" selection-start="22531" selection-end="22531" vertical-scroll-proportion="0.9104651">
+        <state line="826" column="0" selection-start="23554" selection-end="23554" vertical-scroll-proportion="0.9104651">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="566" column="28" selection-start="17155" selection-end="17155" vertical-scroll-proportion="0.44964027">
+        <state line="586" column="12" selection-start="17650" selection-end="17650" vertical-scroll-proportion="0.735012">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="753" column="4" selection-start="14119" selection-end="14119" vertical-scroll-proportion="0.4227545">
+        <state line="775" column="8" selection-start="14538" selection-end="14538" vertical-scroll-proportion="0.3005988">
           <folding />
         </state>
       </provider>

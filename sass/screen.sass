@@ -752,24 +752,53 @@ section#QD, section#suggestions
   min-height: 300px
 
   ol
-    display: block
     padding: 10px
     margin: 5px
-    list-style-position: outside
+    list-style-position: inside
 
     li
-      display: block
       padding: 2px 15px
       margin: 5px 1px
+      height: 30px
       background: #cfcfcf
       cursor: hand
       cursor: pointer
+
       //border: 1px dashed #444
+
+      a
+        display: inline-block
+        margin-left: 10px
+        vertical-align: middle
+        width: 20px
+        height: 20px
+        //border: 1px dashed #ddd
+        display: none
 
     li:hover
       background: rgb(140, 140, 140)
       color: #efefef
       //border: 1px dashed #000
+
+      a
+        display: inline-block
+
+
+
+    a.vote-up
+      background: url("../img/vote.png") 0px 0px
+      margin-right: 0px
+      //border-left: 2px solid #444
+    a.vote-up:hover
+      background: url("../img/vote.png")-20px 0px
+
+
+    a.vote-down
+      background: url("../img/vote.png") 0px -20px
+      margin-left: 0px
+      //border-right: 2px solid #444
+    a.vote-down:hover
+      background: url("../img/vote.png") -20px -20px
 
 
 form#suggest-something
