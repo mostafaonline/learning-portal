@@ -336,11 +336,18 @@ section header a.rss:hover {
   margin-bottom: 35px;
 }
 
-/* line 363, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 350, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+#dummy2 {
+  background: transparent;
+  height: 340px;
+  margin-bottom: 35px;
+}
+
+/* line 368, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about {
   background: #f6f6f6;
 }
-/* line 366, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 371, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about .article {
   display: table-cell;
   width: 60%;
@@ -348,35 +355,35 @@ section header a.rss:hover {
   position: absolute;
   top: -20px;
 }
-/* line 373, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 378, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about .article h3 {
   color: #67bbff;
 }
-/* line 375, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 380, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about .article p {
   text-align: justify;
   padding-right: 40px;
   color: #444444;
 }
-/* line 380, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 385, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about .article p a {
   text-decoration: none;
   color: #99c000;
   padding: 1px 5px;
   font-weight: bold;
 }
-/* line 387, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 392, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about .article p a:hover {
   text-decoration: underline;
 }
-/* line 391, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 396, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #about video {
   display: table-cell;
   margin: 20px 10px 15px 600px;
   border: inherit;
 }
 
-/* line 408, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 413, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul {
   list-style: none;
   display: table;
@@ -384,14 +391,14 @@ section header a.rss:hover {
   margin: 0 auto;
   padding: 10px 0;
 }
-/* line 415, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 420, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li {
   display: inline-block;
   height: 120px;
   padding: 10px 0;
   margin: 0 18px 10px;
 }
-/* line 421, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 426, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li a {
   display: block;
   text-decoration: none;
@@ -400,12 +407,12 @@ section header a.rss:hover {
   text-align: center;
   border: 1px solid #888888;
 }
-/* line 429, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 434, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li img {
   height: 100px;
   width: 150px;
 }
-/* line 434, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 439, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li div {
   visibility: hidden;
   background: rgba(0, 0, 0, 0.7);
@@ -415,17 +422,17 @@ section header a.rss:hover {
   top: 72px;
   border: 1px solid #888888;
 }
-/* line 444, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 449, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li div p {
   font-size: 11px;
   color: #fcfcfc;
   margin: 10px 10px 7px 10px;
 }
-/* line 449, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 454, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li div p b {
   color: #59c5ff;
 }
-/* line 452, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 457, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li div span {
   display: block;
   background: #eeeeee url("../img/play.png") center left no-repeat;
@@ -435,7 +442,7 @@ section header a.rss:hover {
   text-align: right;
   padding-left: 8px;
 }
-/* line 461, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 466, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li div span a, #lessons ul li div span a:hover, #lessons ul li div span a:active, #lessons ul li div span a:visited {
   font-size: 11px;
   color: #222222;
@@ -443,7 +450,7 @@ section header a.rss:hover {
   padding: 8px;
   border: none;
 }
-/* line 469, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 474, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li a.lesson-title {
   margin: 5px auto;
   padding: 3px 0;
@@ -452,13 +459,13 @@ section header a.rss:hover {
   font-size: 12px;
   font-weight: bold;
 }
-/* line 477, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 482, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #lessons ul li a.lesson-title:hover {
   background: #555555;
   color: white;
 }
 
-/* line 491, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 496, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 section#QD, section#suggestions {
   background: transparent;
   border: none;
@@ -468,7 +475,7 @@ section#QD, section#suggestions {
   padding: 0;
 }
 
-/* line 499, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 504, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions, #Discussions, #topics {
   background: #f6f6f6;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -478,33 +485,33 @@ section#QD, section#suggestions {
   padding: 5px;
   width: 48%;
 }
-/* line 508, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 513, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions header, #Discussions header, #topics header {
   margin: 0 5px;
 }
 
-/* line 511, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 516, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #suggest {
   width: 49.4%;
 }
 
-/* line 515, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 520, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions, #topics {
   float: left;
 }
 
-/* line 518, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 523, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Discussions, #suggest {
   float: right;
 }
 
-/* line 523, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 528, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul, #Discussions ul {
   list-style: none;
   width: 100%;
   padding: 0;
 }
-/* line 528, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 533, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li, #Discussions ul li {
   border-radius: 0;
   -moz-border-radius: 0;
@@ -516,19 +523,19 @@ section#QD, section#suggestions {
   background: #f7f7f7;
   border-bottom: 1px groove #888888;
 }
-/* line 540, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 545, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li a, #Discussions ul li a {
   text-decoration: none;
   display: table-cell;
   color: black;
 }
-/* line 545, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 550, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li img, #Discussions ul li img {
   width: 48px;
   height: 48px;
   margin-bottom: 15px;
 }
-/* line 550, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 555, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li a.profile, #Discussions ul li a.profile {
   width: 20%;
   text-align: center;
@@ -539,20 +546,20 @@ section#QD, section#suggestions {
   -webkit-border-radius: 0;
   font-size: 0.7em;
 }
-/* line 561, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 566, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li a.post, #Discussions ul li a.post {
   text-align: justify;
   line-height: 1.2;
 }
-/* line 566, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 571, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li a.post p, #Discussions ul li a.post p {
   padding: 0 10px;
 }
-/* line 571, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 576, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li:first-of-type, #Discussions ul li:first-of-type {
   margin-top: -15px;
 }
-/* line 575, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 580, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li:last-of-type, #Discussions ul li:last-of-type {
   margin-bottom: -5px;
   border-bottom-left-radius: 5px;
@@ -563,12 +570,12 @@ section#QD, section#suggestions {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom: none;
 }
-/* line 585, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 590, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #Questions ul li:hover, #Discussions ul li:hover {
   background: #ededed;
 }
 
-/* line 614, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 619, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories ul#tabs {
   height: 100%;
   list-style: none;
@@ -580,7 +587,7 @@ section#QD, section#suggestions {
   margin: auto 0 10px !important;
   padding: 0;
 }
-/* line 625, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 630, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories ul#tabs li {
   width: 155px;
   background: gainsboro;
@@ -599,16 +606,16 @@ section#QD, section#suggestions {
   cursor: pointer;
   cursor: hand;
 }
-/* line 645, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 650, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories ul#tabs li a {
   text-decoration: none;
   display: block;
 }
-/* line 649, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 654, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories ul#tabs li:first-of-type {
   margin-top: 15px;
 }
-/* line 652, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 657, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories ul#tabs li.current {
   z-index: 10;
   border-right: none;
@@ -622,7 +629,7 @@ section#QD, section#suggestions {
   margin-left: 15px;
   color: black;
 }
-/* line 666, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 671, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content {
   background: #bbbbbb;
   margin: 15px 10px 20px 190px;
@@ -631,7 +638,7 @@ section#QD, section#suggestions {
   padding: 10px 10px 5px 20px;
   border: 1px solid #777777;
 }
-/* line 678, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 683, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub {
   padding: 0px;
   -moz-column-count: 3;
@@ -641,7 +648,7 @@ section#QD, section#suggestions {
   column-count: 3;
   column-gap: 5px;
 }
-/* line 687, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 692, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub > li {
   display: inline-block;
   background: #fcfcfc;
@@ -649,7 +656,7 @@ section#QD, section#suggestions {
   margin: 0 0 10px 0;
   border: 1px solid #555555;
 }
-/* line 694, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 699, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub > li h3 {
   text-align: left;
   padding: 5px 10px;
@@ -660,7 +667,7 @@ section#QD, section#suggestions {
   color: #faffc5;
   position: relative;
 }
-/* line 704, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 709, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub > li h3 p {
   height: 20px;
   display: block;
@@ -681,7 +688,7 @@ section#QD, section#suggestions {
   background: rgba(0, 0, 0, 0.5);
   margin-top: 0;
 }
-/* line 726, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 731, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub > li > a {
   display: block;
   font-weight: normal;
@@ -694,23 +701,23 @@ section#QD, section#suggestions {
   -webkit-border-radius: 0;
   background: rgba(153, 192, 0, 0.5);
 }
-/* line 738, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 743, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #categories .tab-content ul.sub > li > a:hover {
   background: #99c000;
 }
 
-/* line 748, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 753, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #topics {
   min-height: 220px;
 }
-/* line 751, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 756, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #topics ul {
   list-style-type: none;
   display: block;
   padding: 10px;
   margin: 5px;
 }
-/* line 758, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 763, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #topics ul li {
   display: inline-block;
   padding: 2px 15px;
@@ -719,23 +726,23 @@ section#QD, section#suggestions {
   cursor: hand;
   cursor: pointer;
 }
-/* line 767, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 772, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 #topics ul li:hover {
   background: #8c8c8c;
   color: #efefef;
 }
 
-/* line 773, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 778, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something {
   padding: 30px 20px 20px;
   color: #444444;
 }
-/* line 777, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 782, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something p {
   padding-left: 10px;
   margin: 0;
 }
-/* line 781, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 786, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something h2 {
   width: 100%;
   border-bottom: 1px solid #cccccc;
@@ -746,30 +753,30 @@ form#suggest-something h2 {
   -webkit-border-radius: 0;
   color: #67bbff;
 }
-/* line 791, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 796, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something input {
   color: #888888;
   margin: 5px;
   height: 35px;
   padding: 1px;
 }
-/* line 797, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 802, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something input[type="email"] {
   width: 97%;
 }
-/* line 801, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 806, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something input[type="text"] {
   width: 77.7%;
   float: left;
   margin-right: 8px;
 }
-/* line 806, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 811, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 form#suggest-something button {
   margin: 5px 0;
   height: 40px;
 }
 
-/* line 821, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
+/* line 826, C:/Users/m.Nasehi/RubymineProjects/Learning Portal/sass/screen.sass */
 footer p {
   margin: 10px;
   text-align: center;
