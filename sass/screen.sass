@@ -8,25 +8,17 @@ $wrapper-width: 960px
 body
   background: rgb(232, 232, 232)
   font-family: Segoe UI
-  //background-image: linear-gradient(left , rgb(103,187,255) 0%,rgb(35,35,35) 20%, rgb(35,35,35) 80%, rgb(103,187,255) 100%)
-  //background-image: -o-linear-gradient(left , rgb(103,187,255) 0%,rgb(35,35,35) 20%, rgb(35,35,35) 80%, rgb(103,187,255) 100%)
-  //background-image: -moz-linear-gradient(left , rgb(103,187,255) 0%, rgb(35,35,35) 20%, rgb(35,35,35) 80%, rgb(103,187,255) 100%)
-  //background-image: -webkit-linear-gradient(left , rgb(103,187,255) 0%, rgb(35,35,35) 20%, rgb(35,35,35) 80%, rgb(103,187,255) 100%)
-  //background-image: -ms-linear-gradient(left , rgb(103,187,255) 0%, rgb(35,35,35) 20%, rgb(35,35,35) 80%, rgb(103,187,255) 100%)
 
 
 
 .hidden
   display: none
 
-//#wrapper
-  background:
 
 #wrapper, section
   width: $wrapper-width
   margin-right: auto
   margin-left: auto
-  //background: #232323
   position: relative
   display: table
 
@@ -55,6 +47,8 @@ footer
   padding: 0.5em 1em
   border: none
 
+a, a:visited
+  color: #000000
 
 .btn:hover
   background: #c9ef00
@@ -92,11 +86,9 @@ form
     height: 40px
     margin-left: auto
     margin-right: auto
-    //border-bottom: 1px #ffffff groove
 
 
 #row1
-  //background:  #232323
   font-size: .9em
   display: table
   width: $wrapper-width
@@ -112,7 +104,6 @@ form
   #title
     font-size: 1.2em
     color: #b3d900
-    //float: left
     display: table-cell
     width: 390px
     padding: 10px
@@ -125,7 +116,6 @@ form
 
   #logo
     display: table-cell
-    //float: left
     width: 120px
     height: 100px
     padding-right: 20px
@@ -134,70 +124,105 @@ form
     -moz-border-radius: 0
     -webkit-border-radius: 0
 
-  #sign-in
+
+  #signing
     display: table-cell
-    width: 250px
-    padding-left: 40px
+    position: relative
     vertical-align: middle
-    border-bottom-left-radius: 5px
-    -moz-border-bottom-left-radius: 5px
-    -webkit-border-bottom-left-radius: 5px
-
-    input[type='email']
-      float: left
-      width: 96%
-
-
-
-    input[type='password']
-      width: 70%
-      margin-top: 5px
-
-
-    button
-      height: 25px
-
-  p
-    font-size: 0.9em
-    font-weight: normal
-    line-height: 0
-
-  a.join
-    display: block
-    float: right
-    height: 43px
-    width: 90px
     text-align: center
-    padding: 8px 5px 4px
-    margin: 0 10px 23px 2px
-    cursor: pointer
-    cursor: hand
-    background: #ebb200
-    font-size: 0.9em !important
+
+    #loginbtn, #joinbtn
+      display: inline-block
+      width: 120px
+      margin-left: 10px
+      text-align: center
+      padding: 10px
+      cursor: hand
+      cursor: pointer
 
 
-  a.join:hover
-    background: #ffc600
+
+    #joinbtn, .cancel
+      background: #e8ae00
 
 
-  #sign-up
-    display: none
-    position: absolute
-    top: 0
-    right: 0
-    padding: 20px 0
-    width: 370px
-    height: 60px
-    padding-left: 23px
+      &:hover
+        background: #ffc600
 
-    input
-      margin: 3px 1px
-      width: 170px
+    p
+      font-size: 0.9em
+      font-weight: normal
+      line-height: 0
 
-    .joinbtn
-      border: 0
-      margin-left: 1px
-      padding: 5px 22px !important
+
+    div
+      width: 263px
+      position: absolute
+      right: 52px
+      top: 85px
+      background: rgba(0,0,0,0.5)
+      border: 1px groove #efefef
+      padding: 15px
+      display: none
+
+      .triangle
+        background: url("../img/triangle.png") center center no-repeat
+        border: none
+        display: block
+
+      form
+        background: #efefef
+        padding: 10px
+
+        input
+          width: 230px
+          height: 30px
+          margin: 2px auto
+          padding-left: 10px
+
+
+        a
+          display: block
+          text-decoration: underline
+          margin: 10px 0
+
+        button
+          width: 243px
+          height: 30px
+          margin: 2px auto
+
+        #fb-login
+          background: url("../img/fb-login.png")
+
+        #g-login
+          background: url("../img/g-login.png")
+
+    #sign-in
+      .triangle
+        margin: -108px 20px 0 0
+
+    #sign-up
+      .triangle
+        margin: -108px -130px 0 0
+
+      #captcha
+        width: 243px
+        height: 70px
+        margin-top: 10px
+
+      #refresh
+        margin-top: 0
+        background: #c0c0c0
+        text-decoration: none
+        -webkit-border-radius: 0
+        -moz-border-radius: 0
+        border-radius: 0
+
+
+
+
+
+
 
 
 
@@ -233,6 +258,10 @@ form
         color: #222
         display: inline-block
         background: #fff
+        -webkit-transition: background 1.2s ease-out
+        -moz-transition: background 1.2s ease-out
+        -o-transition: background 1.2s ease-out
+        transition: background 1.2s ease-out
         padding: 3px 10px
         margin: 10px 0px
         text-decoration: none
@@ -243,7 +272,6 @@ form
 
     #search
       display: table-cell
-      //width: 400px
       padding-left: 19px
 
 
@@ -855,6 +883,7 @@ footer
     margin: 10px
     text-align: center
     color: #888
+
 
 
 

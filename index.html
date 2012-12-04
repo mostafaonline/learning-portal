@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
 <head>
@@ -16,30 +19,34 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!--sass added -->
-    <link href="css/screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="css/screen.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css"/>
     <!--[if IE]>
-    <link href="/css/ie.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/ie.css" media="screen" rel="stylesheet" type="text/css"/>
     <![endif]-->
 
 </head>
 <body>
 <!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
 <![endif]-->
 
 <!-- Main Content Begins Here -->
 
 <hgroup id="site-header">
-    <div id="row0"><div id="towhid"></div></div>
+    <div id="row0">
+        <div id="towhid"></div>
+    </div>
     <div id="row1">
 
         <h1 id="title">
@@ -49,25 +56,53 @@
         <div id="logo">
         </div>
 
-        <form id="sign-in">
-            <input type="email" name="Email" placeholder="Email">
-            <input type="password" name="Password" placeholder="Password">
-            <button class="btn" type="submit" name="Sign in">Sign in</button>
-        </form>
+        <div id="signing">
 
-        <a class="btn join" name="Join Us" id="join">
-            <p>not a member?</p>
-            Join Us!
-        </a>
+            <a class="btn" name="Login" id="loginbtn">
+                Sign in
+            </a>
 
-        <form id="sign-up">
-            <input type="email" name="Email" placeholder="Email">
-            <input type="password" name="Password" placeholder="Password">
-            <input type="password" name="Password" placeholder="Repeat Password">
-            <button type="submit" name="Sign Up" class="btn joinbtn">Sign Up</button>
-            <button type="reset" name="Cancel" id="joincancel" class="btn joinbtn">Cancel</button>
-        </form>
 
+            <a class="btn" name="Join" id="joinbtn">
+                Join Us
+            </a>
+
+
+
+            <div id="sign-in">
+                <div class="triangle"></div>
+                <form id="sign-in-form">
+                <input type="email" name="Email" placeholder="Email">
+                <input type="password" name="Password" placeholder="Password">
+                <button class="btn" type="submit" name="Sign in">Let me in!</button>
+                <a href="">I can't remember my password!</a>
+                <button class="btn" id="fb-login"></button>
+                <button class="btn" id="g-login"></button>
+                <button name="Cancel" class="btn cancel">Cancel</button>
+                </form>
+            </div>
+
+            <div id="sign-up">
+                <div class="triangle"></div>
+                <form id="sign-up-form">
+                <input type="email" name="Email" placeholder="Email">
+                <input type="password" name="Password" placeholder="Password">
+                <input type="password" name="Password" placeholder="Repeat Password">
+
+
+                <!-----------------------------captcha-------------------------------------------->
+                <img id="captcha" src="http://image.captchas.net?client=demo&random=something">
+                <a id="refresh" href="">refresh image</a>
+                <input type="text" name="captcha" placeholder="Enter the text above">
+                <!-----------------------------captcha-------------------------------------------->
+
+
+                <button type="submit" name="Sign Up" class="btn joinbtn">Create my account!</button>
+                <button name="Cancel" class="btn cancel">Cancel</button>
+                </form>
+            </div>
+
+        </div>
     </div>
 
 
@@ -109,13 +144,14 @@
 
     <ul>
         <li onmouseover="show('description1')" onmouseout="hide('description1')">
-            <a ><img src="img/normal_MN_47.jpg"></a>
+            <a><img src="img/normal_MN_47.jpg"></a>
+
             <div id="description1">
-               <p>
-                <b>Category:</b><br>
-                   category-name<br>
-                <b>Date Added:</b> 00/00/00<br>
-               </p>
+                <p>
+                    <b>Category:</b><br>
+                    category-name<br>
+                    <b>Date Added:</b> 00/00/00<br>
+                </p>
                    <span>
                       <a href="">Play the Podcast </a>
                    </span>
@@ -124,7 +160,8 @@
         </li>
 
         <li onmouseover="show('description2')" onmouseout="hide('description2')">
-            <a ><img src="img/Islam1.jpg"></a>
+            <a><img src="img/Islam1.jpg"></a>
+
             <div id="description2">
                 <p>
                     <b>Category:</b><br>
@@ -139,7 +176,8 @@
         </li>
 
         <li onmouseover="show('description3')" onmouseout="hide('description3')">
-            <a ><img src="img/hijab.jpg"></a>
+            <a><img src="img/hijab.jpg"></a>
+
             <div id="description3">
                 <p>
                     <b>Category:</b><br>
@@ -154,7 +192,8 @@
         </li>
 
         <li onmouseover="show('description4')" onmouseout="hide('description4')">
-            <a ><img src="img/imam_askari.jpg"></a>
+            <a><img src="img/imam_askari.jpg"></a>
+
             <div id="description4">
                 <p>
                     <b>Category:</b><br>
@@ -169,7 +208,8 @@
         </li>
 
         <li onmouseover="show('description5')" onmouseout="hide('description5')">
-            <a ><img src="img/islampray.jpg"></a>
+            <a><img src="img/islampray.jpg"></a>
+
             <div id="description5">
                 <p>
                     <b>Category:</b><br>
@@ -186,362 +226,363 @@
 </section>
 
 <section id="QD">
-<div id="Questions">
-    <header>
-        <a href="" class="title">Questions</a>
-        <a href="" class="latest" title="show latest entries">Latest</a>
-        <a href="" class="hottest" title="show popular entries">Most Popular</a>
-        <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
-    </header>
+    <div id="Questions">
+        <header>
+            <a href="" class="title">Questions</a>
+            <a href="" class="latest" title="show latest entries">Latest</a>
+            <a href="" class="hottest" title="show popular entries">Most Popular</a>
+            <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
+        </header>
 
-    <ul>
-        <li>
-            <a href="profile" class="profile">
-            <img src="img/profile.gif">
-            Member ID
-            </a>
+        <ul>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="question url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
+                <a href="question url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="question url" class="post">
-                <p>Is there hijab for men?</p>
-            </a>
-        </li>
+                <a href="question url" class="post">
+                    <p>Is there hijab for men?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="question url" class="post">
-                <p>Can a Muslim woman wear hijab and have makeup on without covering her face?</p>
-            </a>
-        </li>
+                <a href="question url" class="post">
+                    <p>Can a Muslim woman wear hijab and have makeup on without covering her face?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="question url" class="post">
-                <p>	Does hijab protect women from molestation?</p>
-            </a>
-        </li>
+                <a href="question url" class="post">
+                    <p> Does hijab protect women from molestation?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="question url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
-    </ul>
-</div>
+                <a href="question url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-<div id="Discussions">
-    <header>
-        <a href="" class="title">Discussions</a>
-        <a href="" class="latest" title="show latest entries">Latest</a>
-        <a href="" class="hottest" title="show popular entries">Most Popular</a>
-        <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
-    </header>
+    <div id="Discussions">
+        <header>
+            <a href="" class="title">Discussions</a>
+            <a href="" class="latest" title="show latest entries">Latest</a>
+            <a href="" class="hottest" title="show popular entries">Most Popular</a>
+            <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
+        </header>
 
-    <ul>
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+        <ul>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="discussion url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
+                <a href="discussion url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="discussion url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
+                <a href="discussion url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="discussion url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
+                <a href="discussion url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
 
-        <li>
+            <li>
 
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="discussion url" class="post">
-                <p>Well it’s the Qur’an that says that. And as the Qur’an says.</p>
-            </a>
-        </li>
+                <a href="discussion url" class="post">
+                    <p>Well it’s the Qur’an that says that. And as the Qur’an says.</p>
+                </a>
+            </li>
 
-        <li>
-            <a href="profile" class="profile">
-                <img src="img/profile.gif">
-                Member ID
-            </a>
+            <li>
+                <a href="profile" class="profile">
+                    <img src="img/profile.gif">
+                    Member ID
+                </a>
 
-            <a href="discussion url" class="post">
-                <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
-            </a>
-        </li>
-    </ul>
-</div>
+                <a href="discussion url" class="post">
+                    <p>Is hijab unique to Islam, or are dress codes for women found in other religions?</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 </section>
 
 <section id="categories">
-    <header>
-        <a href="" class="title">Categories</a>
-        <a href="" class="latest" title="show latest entries">Latest</a>
-        <a href="" class="hottest" title="show popular entries">Most Popular</a>
-        <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
-    </header>
+<header>
+    <a href="" class="title">Categories</a>
+    <a href="" class="latest" title="show latest entries">Latest</a>
+    <a href="" class="hottest" title="show popular entries">Most Popular</a>
+    <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
+</header>
 
-    <ul id="tabs">
-        <li class="current" id="category1">category 1</li>
-        <li>category 2</li>
-        <li>category 3</li>
-        <li>category 4</li>
-        <li>category 5</li>
-        <li>category 6</li>
-        <li>category 7</li>
-        <li>category 8</li>
-        <li>category 9</li>
-        <li>category 10</li>
+<ul id="tabs">
+    <li class="current" id="category1">category 1</li>
+    <li>category 2</li>
+    <li>category 3</li>
+    <li>category 4</li>
+    <li>category 5</li>
+    <li>category 6</li>
+    <li>category 7</li>
+    <li>category 8</li>
+    <li>category 9</li>
+    <li>category 10</li>
+</ul>
+
+<div class="tab-content">
+
+
+    <ul class="sub">
+        <li>
+            <h3>sub category 1
+                <p>30 lessons</p>
+            </h3>
+
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 2
+                <p>30 lessons</p>
+            </h3>
+
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 3
+                <p>50 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 4
+                <p>70 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 5
+                <p>20 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 6
+                <p>30 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 7
+                <p>30 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 8
+                <p>50 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
+        <li>
+            <h3>sub category 9
+                <p>30 lessons</p>
+            </h3>
+
+            <ul>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+                <li>
+                    lesson title
+                </li>
+            </ul>
+
+            <a class="btn">more...</a>
+        </li>
     </ul>
 
-    <div class="tab-content">
-
-
-       <ul class="sub">
-            <li>
-                <h3>sub category 1
-                <p>30 lessons</p>
-                </h3>
-
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 2
-                <p>30 lessons</p>
-                </h3>
-
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 3
-                <p>50 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 4
-                <p>70 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li><li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                    <li>
-                      lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 5
-                <p>20 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 6
-                <p>30 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 7
-                <p>30 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 8
-                <p>50 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                      <li>
-                          lesson title
-                      </li>
-                      <li>
-                          lesson title
-                      </li>
-                      <li>
-                          lesson title
-                      </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-            <li>
-                <h3>sub category 9
-                <p>30 lessons</p>
-                </h3>
-
-                  <ul>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                    <li>
-                        lesson title
-                    </li>
-                  </ul>
-
-                  <a class="btn">more...</a>
-            </li>
-       </ul>
-
-    </div>
+</div>
 
 </section>
 
@@ -591,13 +632,13 @@
             </li>
 
 
-
         </ol>
     </div>
 
     <div id="suggest">
         <form id="suggest-something">
             <p>not enough?</p>
+
             <h2>Suggest a Topic!</h2>
             <input type="email" placeholder=" Your Email Address (so that we can inform you)">
             <input name="topic" type="text" placeholder=" Desired Topic">
@@ -623,7 +664,7 @@
             cultural exchange.<a href="">Read More</a>
         </p>
     </div>
-    <video id="about-video" controls="controls" draggable="false" height="190px" width="340" >
+    <video id="about-video" controls="controls" draggable="false" height="190px" width="340">
         <!--<source src="hijab.present.sound-plaayer.mp4" type="video/mp4" >-->
         <!--<source src="hijab.present.sound-plaayer.ogg" type="video/ogg">-->
     </video>
@@ -632,7 +673,7 @@
 <footer>
     <section>
         <p>
-            &copy; Copyright  by Islamic International Foundation of Cooperation :: IslamIFC
+            &copy; Copyright by Islamic International Foundation of Cooperation :: IslamIFC
         </p>
     </section>
     <div id="dummy2"></div>
@@ -641,33 +682,98 @@
 
 <!-- Main Content Ends Here -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+
+<script src="js/vendor/jquery-1.8.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/vendor/jquery.animate-colors-min.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+
+    //---------------------------------------------set menu items active on scroll-to-----------------------------
+    $(document).scroll(function () {
+
+        $('a.nav').each(function () {
+
+            var divTop = $('#' + this.title).offset().top;
+            var distance = divTop - $("body,html,document").scrollTop();
+            if (distance > 210 && distance < 265) {
+
+                $('a.active').removeClass('active');
+                $(this).addClass('active');
+
+            }
+        });
+    });
+    //---------------------------------------------set menu items active on scroll-to-----------------------------
 
 
-
-
-
-//----------------------------------smooth scrolling for navigation menu----------------------------------
-    $('a.nav').click(function() {
+    //----------------------------------smooth scrolling for navigation menu----------------------------------
+    $('a.nav').click(function () {
 
         $('html, body').animate({
-            scrollTop: $('#'+this.title).offset().top -215
-        }, 1000);
+            scrollTop:$('#' + this.title).offset().top - 215
+        }, 2000);
 
-        $('a.active').removeClass('active');
+        $('a.active').removeClass();
         $(this).addClass('active');
     });
-//----------------------------------smooth scrolling for navigation menu----------------------------------
+    //----------------------------------smooth scrolling for navigation menu----------------------------------
+
+
+
+
+    //---------------------------------------------scroll down signing forms --------------------------------------
+    $('#loginbtn').click(function(){
+        $('#sign-up').hide();
+        $('#sign-in').animate({
+                    height: 'toggle'
+                }, 300
+        );
+    });
+
+
+    $('#joinbtn').click(function(){
+        $('#sign-in').hide();
+        $('#sign-up').animate({
+                    height: 'toggle'
+                }, 300
+        );
+    });
+
+    $('.cancel').click(function(){
+        $('#sign-in').hide();
+        $('#sign-up').hide();
+    });
+
+    $('body').click(function() {
+        $('#sign-in').animate({
+                    height: 'hide'
+                }, 300
+        );
+        $('#sign-up').animate({
+                    height: 'hide'
+                }, 300
+        );
+    });
+
+    $('#signing').click(function(event){
+        event.stopPropagation();
+    });
+
+    $('body').keydown(function (keyEvent) {
+       if (keyEvent.keyCode === 27){
+           $('#sign-in').animate({
+                       height: 'hide'
+                   }, 300
+           );
+           $('#sign-up').animate({
+                       height: 'hide'
+                   }, 300
+           );
+       }
+    });
+    //---------------------------------------------scroll down signing forms --------------------------------------
 
 
 
@@ -678,29 +784,24 @@
 
 
 
-
-//----------------------------------show and hide lesson details on hover----------------------------------
+    //----------------------------------show and hide lesson details on hover----------------------------------
     function show(id) {
         document.getElementById(id).style.visibility = "visible";
     }
     function hide(id) {
         document.getElementById(id).style.visibility = "hidden";
     }
-//----------------------------------show and hide lesson details on hover----------------------------------
+    //----------------------------------show and hide lesson details on hover----------------------------------
 
 
-
-
-
-
-//---------------------------------- tab function in category section----------------------------------
+    //---------------------------------- tab function in category section----------------------------------
     $(function () {
         var items = $('#tabs>li').each(function () {
             $(this).click(function () {
                 //remove previous class and add it to clicked tab
                 items.removeClass('current');
                 $(this).addClass('current');
-              }) ;
+            });
 //                //hide all content divs and show current one
 //                $('div.tab-content').hide().eq(items.index($(this))).show('fast');
 //
@@ -714,43 +815,24 @@
 //        else {
 //            $('div.tab-content').hide().eq(items.index($(this))).show('fast');
 //        }
-    } );})
-//---------------------------------- tab function in category section----------------------------------
+        });
+    })
+    //---------------------------------- tab function in category section----------------------------------
 
 
-
-    //---------------------------------------------set menu items active on click-----------------------------
-    $(function (){
-        var items2= $('#menu>a').each(function(){
-            $this.click(function(){
-                items2.removeClass('active');
-                $(this).addClass('active');
-            })
-        })
-
+    //---------------------------------------------show and hide sign-up form----------------------------------
+    $('a.join').click(function () {
+        document.getElementById('sign-in').style.display = "none";
+        document.getElementById('join').style.display = "none";
+        document.getElementById('sign-up').style.display = "block";
     });
-    //---------------------------------------------set menu items active on click-----------------------------
 
-
-
-
-//---------------------------------------------show and hide sign-up form----------------------------------
-    $('a.join').click(function (){
-        document.getElementById('sign-in').style.display="none";
-        document.getElementById('join').style.display="none";
-        document.getElementById('sign-up').style.display="block";
-            });
-
-    $('button#joincancel').click( function(){
-        document.getElementById('sign-up').style.display="none";
-        document.getElementById('sign-in').style.display="table-cell";
-        document.getElementById('join').style.display="block";
-            });
-//---------------------------------------------show and hide sign-up form----------------------------------
-
-
-
-
+    $('button#joincancel').click(function () {
+        document.getElementById('sign-up').style.display = "none";
+        document.getElementById('sign-in').style.display = "table-cell";
+        document.getElementById('join').style.display = "block";
+    });
+    //---------------------------------------------show and hide sign-up form----------------------------------
 
 
 </script>
