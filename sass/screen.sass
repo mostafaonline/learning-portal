@@ -7,7 +7,7 @@ $wrapper-width: 960px
 
 body
   background: rgb(232, 232, 232)
-  font-family: Segoe UI
+  font-family: Segoe UI, Calibri
 
 
 
@@ -174,11 +174,24 @@ form
         background: #efefef
         padding: 10px
 
+        input[type='checkbox']
+          width: 30px
+          vertical-align: middle
+
+        input[type='email']
+          background: #ffffff url("../img/usr.png")center left no-repeat
+
+        input[type='password']
+          background: #ffffff url("../img/pwd.png")center left no-repeat
+
+        input[type='text']
+          background: #ffffff url("../img/cpt.png")center left no-repeat
+
         input
-          width: 230px
+          width: 210px
           height: 30px
           margin: 2px auto
-          padding-left: 10px
+          padding-left: 30px
 
 
         a
@@ -283,6 +296,24 @@ form
 
 
 
+//-----------category and sub toolbar-------------------------------------------------
+
+#row3, #row4
+  width: $wrapper-width
+  margin: 5px auto
+
+
+  a, a:visited
+    display: inline-block
+    background: #5f9ea0
+    padding: 2px 10px
+    cursor: hand
+    cursor: pointer
+    width: 72px
+    text-align: center
+
+  a:hover, a:active, a.active
+    background: #ffebcd
 
 
 
@@ -290,6 +321,9 @@ form
 
 
 
+
+#dummy_lessons
+  height: 240px
 
 
 
