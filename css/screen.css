@@ -298,7 +298,7 @@ section {
 
 #dummy2 {
   background: transparent;
-  height: 340px;
+  height: 360px;
   margin-bottom: 35px; }
 
 #about {
@@ -327,42 +327,109 @@ section {
     margin: 20px 10px 15px 600px;
     border: inherit; }
 
-#lessons ul {
+#lessons #player {
+  display: none;
+  position: relative;
+  margin: 20px auto 10px;
+  width: 100%;
+  background: #444444;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0; }
+  #lessons #player div {
+    float: left; }
+    #lessons #player div ul li {
+      display: inline-block;
+      border: 1px groove; }
+  #lessons #player .image {
+    padding: 20px;
+    width: 160px;
+    margin-right: 30px; }
+    #lessons #player .image img {
+      margin-bottom: 5px;
+      border: 1px solid #888888; }
+    #lessons #player .image a {
+      display: block;
+      text-decoration: none;
+      width: 144px;
+      text-align: center;
+      background: #dddddd;
+      font-size: 14px;
+      padding: 3px;
+      border: 1px solid #888888; }
+  #lessons #player .description {
+    padding: 25px 20px 20px;
+    width: 300px; }
+    #lessons #player .description a {
+      display: block;
+      background: #dddddd;
+      width: 250px;
+      padding: 5px;
+      margin-top: 5px;
+      text-align: center;
+      border: 1px solid #888888; }
+  #lessons #player .track {
+    padding: 40px 40px 0; }
+    #lessons #player .track a#close_player {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background: url("../img/close.png") center center;
+      cursor: pointer;
+      cursor: hand; }
+    #lessons #player .track ul {
+      padding: 2px; }
+      #lessons #player .track ul li {
+        border: none;
+        margin: 0 8px;
+        display: inline-block; }
+        #lessons #player .track ul li .icon {
+          display: block;
+          background: #eeeeee;
+          width: 40px;
+          height: 40px;
+          border: none; }
+#lessons ul#list_of_lessons {
   list-style: none;
   display: table;
   width: inherit;
   margin: 0 auto;
   padding: 10px 0; }
-  #lessons ul li {
+  #lessons ul#list_of_lessons li {
     display: inline-block;
     height: 120px;
     padding: 10px 0;
-    margin: 0 18px 10px; }
-    #lessons ul li a {
+    margin: 0 18px 10px;
+    position: relative; }
+    #lessons ul#list_of_lessons li a {
       display: block;
       text-decoration: none;
       width: 150px;
       margin: 0 auto;
       text-align: center;
       border: 1px solid #888888; }
-    #lessons ul li img {
+    #lessons ul#list_of_lessons li img {
       height: 100px;
       width: 150px; }
-    #lessons ul li div {
+    #lessons ul#list_of_lessons li div {
       visibility: hidden;
       background: rgba(0, 0, 0, 0.7);
       height: 100px;
       width: 150px;
       position: absolute;
-      top: 72px;
+      top: 10px;
+      left: 0;
       border: 1px solid #888888; }
-      #lessons ul li div p {
+      #lessons ul#list_of_lessons li div p {
         font-size: 11px;
         color: #fcfcfc;
         margin: 10px 10px 7px 10px; }
-        #lessons ul li div p b {
+        #lessons ul#list_of_lessons li div p b {
           color: #59c5ff; }
-      #lessons ul li div span {
+      #lessons ul#list_of_lessons li div span {
         display: block;
         background: #eeeeee url("../img/play.png") center left no-repeat;
         height: 30px;
@@ -370,20 +437,22 @@ section {
         margin: 0 10px;
         text-align: right;
         padding-left: 8px; }
-        #lessons ul li div span a, #lessons ul li div span a:hover, #lessons ul li div span a:active, #lessons ul li div span a:visited {
+        #lessons ul#list_of_lessons li div span a, #lessons ul#list_of_lessons li div span a:hover, #lessons ul#list_of_lessons li div span a:active, #lessons ul#list_of_lessons li div span a:visited {
           font-size: 11px;
           color: #222222;
           width: 110px;
           padding: 8px;
-          border: none; }
-    #lessons ul li a.lesson-title {
+          border: none;
+          cursor: pointer;
+          cursor: hand; }
+    #lessons ul#list_of_lessons li a.lesson-title {
       margin: 5px auto;
       padding: 3px 0;
       color: black;
       background: #cccccc;
       font-size: 12px;
       font-weight: bold; }
-    #lessons ul li a.lesson-title:hover {
+    #lessons ul#list_of_lessons li a.lesson-title:hover {
       background: #555555;
       color: white; }
 
@@ -596,15 +665,15 @@ section#QD, section#suggestions {
       background: #8c8c8c;
       color: #efefef; }
       #topics ol li:hover a {
-        display: inline-block; }
+        display: inline-block;
+        float: right;
+        margin: 5px 0 0 0; }
     #topics ol a.vote-up {
-      background: url("../img/vote.png") 0px 0px;
-      margin-right: 0px; }
+      background: url("../img/vote.png") 0px 0px; }
     #topics ol a.vote-up:hover {
       background: url("../img/vote.png") -20px 0px; }
     #topics ol a.vote-down {
-      background: url("../img/vote.png") 0px -20px;
-      margin-left: 0px; }
+      background: url("../img/vote.png") 0px -20px; }
     #topics ol a.vote-down:hover {
       background: url("../img/vote.png") -20px -20px; }
 

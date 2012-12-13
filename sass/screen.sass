@@ -411,7 +411,7 @@ section
 
 #dummy2
   background: transparent
-  height: 340px
+  height: 360px
   margin-bottom: 35px
 
 
@@ -470,7 +470,94 @@ section
 //----------lessons-------------------------------------------------------
 
 #lessons
-  ul
+
+  #player
+    display: none
+    position: relative
+    margin: 20px auto 10px
+    width: 100%
+    background: #444
+    border-radius: 0
+    -moz-border-radius: 0
+    -webkit-border-radius: 0
+
+    div
+      float: left
+
+      ul
+        li
+          display: inline-block
+          border: 1px groove
+
+    .image
+      padding: 20px
+      width: 160px
+      margin-right: 30px
+
+      img
+        margin-bottom: 5px
+        border: 1px solid #888
+
+      a
+        display: block
+        text-decoration: none
+        width: 144px
+        text-align: center
+        background: #ddd
+        font-size: 14px
+        padding: 3px
+        border: 1px solid #888
+
+
+    .description
+      padding: 25px 20px 20px
+      width: 300px
+
+      a
+        display: block
+        background: #ddd
+        width: 250px
+        padding: 5px
+        margin-top: 5px
+        text-align: center
+        border: 1px solid #888
+
+    .track
+      padding: 40px 40px 0
+
+
+      a#close_player
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        width: 24px
+        height: 24px
+        background: url("../img/close.png") center center
+        cursor: pointer
+        cursor: hand
+
+      ul
+        padding: 2px
+
+        li
+          border: none
+          margin: 0 8px
+          display: inline-block
+
+          .icon
+            display: block
+            background: #eee
+            width: 40px
+            height: 40px
+            border: none
+
+        
+       
+
+
+
+  ul#list_of_lessons
     list-style: none
     display: table
     width: inherit
@@ -482,6 +569,7 @@ section
       height: 120px
       padding: 10px 0
       margin: 0 18px 10px
+      position: relative
 
       a
         display: block
@@ -502,7 +590,8 @@ section
         height: 100px
         width: 150px
         position: absolute
-        top: 72px
+        top: 10px
+        left: 0
         border: 1px solid #888
 
 
@@ -529,6 +618,8 @@ section
             width: 110px
             padding: 8px
             border: none
+            cursor: pointer
+            cursor: hand
 
 
       a.lesson-title
@@ -844,24 +935,22 @@ section#QD, section#suggestions
 
       a
         display: inline-block
+        float: right
+        margin: 5px 0 0 0
 
 
 
     a.vote-up
       background: url("../img/vote.png") 0px 0px
-      margin-right: 0px
-      //border-left: 2px solid #444
+
     a.vote-up:hover
       background: url("../img/vote.png")-20px 0px
 
-
     a.vote-down
       background: url("../img/vote.png") 0px -20px
-      margin-left: 0px
-      //border-right: 2px solid #444
+
     a.vote-down:hover
       background: url("../img/vote.png") -20px -20px
-
 
 form#suggest-something
   padding: 5px 20px

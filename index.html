@@ -51,7 +51,7 @@
     <div id="row1">
 
         <h1 id="title">
-            Integrated Online Service for Islamic Information Exchange and Education
+            Integrated Online Services for Islamic Information Exchange and Education
         </h1>
 
         <div id="logo">
@@ -149,82 +149,120 @@
         <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
     </header>
 
-    <ul>
-        <li onmouseover="show('description1')" onmouseout="hide('description1')">
+    <div id="player">
+
+        <div class="image">
+            <img src="http://placehold.it/150x100">
+            <a>Playing Podcast...</a>
+        </div>
+
+        <div class="description">
+
+            <a>
+                <b>Lesson Title</b>
+            </a>
+
+            <a>
+                <b>Viewd:</b> 00 times
+            </a>
+
+            <a>
+                <b>Date Added:</b> 00/00/00
+            </a>
+        </div>
+
+        <div class="track">
+            <a id="close_player">&nbsp;</a>
+            <audio id="podcast" controls="controls" draggable="false">
+                <!--<source>-->
+            </audio>
+
+            <ul>
+                <li><a class="icon" id="Script_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Microblog_icon">&nbsp;</a></li>
+                <li><a class="icon" id="QA_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Discussion_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Presentation_icon">&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul id="list_of_lessons">
+        <li>
             <a><img src="img/normal_MN_47.jpg"></a>
 
-            <div id="description1">
+            <div class="description">
                 <p>
                     <b>Category:</b><br>
                     category-name<br>
                     <b>Date Added:</b> 00/00/00<br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
 
-        <li onmouseover="show('description2')" onmouseout="hide('description2')">
+        <li>
             <a><img src="img/Islam1.jpg"></a>
 
-            <div id="description2">
+            <div class="description">
                 <p>
                     <b>Category:</b><br>
                     category-name<br>
                     <b>Date Added:</b> 00/00/00<br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
 
-        <li onmouseover="show('description3')" onmouseout="hide('description3')">
+        <li>
             <a><img src="img/hijab.jpg"></a>
 
-            <div id="description3">
+            <div class="description">
                 <p>
                     <b>Category:</b><br>
                     category-name<br>
                     <b>Date Added:</b> 00/00/00<br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
 
-        <li onmouseover="show('description4')" onmouseout="hide('description4')">
+        <li>
             <a><img src="img/imam_askari.jpg"></a>
 
-            <div id="description4">
+            <div class="description">
                 <p>
                     <b>Category:</b><br>
                     category-name<br>
                     <b>Date Added:</b> 00/00/00<br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
 
-        <li onmouseover="show('description5')" onmouseout="hide('description5')">
+        <li>
             <a><img src="img/islampray.jpg"></a>
 
-            <div id="description5">
+            <div class="description">
                 <p>
                     <b>Category:</b><br>
                     category-name<br>
                     <b>Date Added:</b> 00/00/00<br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
@@ -369,7 +407,7 @@
 
 <section id="categories">
 <header>
-    <a href="" class="title">Categories</a>
+    <a href="categories.html" class="title">Categories</a>
     <a href="" class="latest" title="show latest entries">Latest</a>
     <a href="" class="hottest" title="show popular entries">Most Popular</a>
     <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
@@ -785,20 +823,32 @@
 
 
 
-
-
-
-
-
-
     //----------------------------------show and hide lesson details on hover----------------------------------
-    function show(id) {
-        document.getElementById(id).style.visibility = "visible";
-    }
-    function hide(id) {
-        document.getElementById(id).style.visibility = "hidden";
-    }
+    $(document).ready(function () {
+        $('#lessons ul li').bind("mouseover", function () {
+            $(this).find('div.description').css("visibility", "visible");
+        });
+
+        $('#lessons ul li').bind("mouseout", function () {
+            $(this).find('div.description').css("visibility", "hidden");
+        });
+
+    });
     //----------------------------------show and hide lesson details on hover----------------------------------
+
+
+
+    //----------------------------------show and hide lesson podcast----------------------------------
+    $('div.description span a').bind("click", function () {
+        $('div#player').css("display", "table");
+    });
+
+    $('a#close_player').bind("click", function () {
+        $('div#player').css("display", "none");
+    });
+    //----------------------------------show and hide lesson podcast----------------------------------
+
+
 
 
     //---------------------------------- tab function in category section----------------------------------
@@ -809,21 +859,8 @@
                 items.removeClass('current');
                 $(this).addClass('current');
             });
-//                //hide all content divs and show current one
-//                $('div.tab-content').hide().eq(items.index($(this))).show('fast');
-//
-//                window.location.hash = $(this).attr('tab');
-//            });
-//        });
-//
-//        if (location.hash) {
-//            showTab(location.hash);
-//        }
-//        else {
-//            $('div.tab-content').hide().eq(items.index($(this))).show('fast');
-//        }
         });
-    })
+    });
     //---------------------------------- tab function in category section----------------------------------
 
 

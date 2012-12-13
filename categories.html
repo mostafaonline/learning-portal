@@ -51,7 +51,7 @@
     <div id="row1">
 
         <h1 id="title">
-            Integrated Online Service for Islamic Information Exchange and Education
+            Integrated Online Services for Islamic Information Exchange and Education
         </h1>
 
         <div id="logo">
@@ -117,10 +117,10 @@
         <div id="wrap">
             <nav id="menu">
 
-                <a class="nav active" href="#lessons" title="lessons">New Stuff</a>
-                <a class="nav" href="#categories" title="categories">Categories</a>
+                <a class="nav" href="index.html" title="lessons">Home</a>
+                <a class="nav active" href="#lessons" title="categories">Lessons</a>
                 <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
-                <a class="nav" href="#about" title="about">about</a>
+                <a class="nav" href="index.html#about" title="about">about</a>
 
             </nav>
 
@@ -134,38 +134,38 @@
         </div>
     </div>
 
-    <div id="row3">
-        <a class="category" >cat 1</a>
-        <a class="category" >cat 2</a>
-        <a class="category" >cat 3</a>
-        <a class="category" >cat 4</a>
-        <a class="category" >cat 5</a>
-        <a class="category" >cat 6</a>
-        <a class="category" >cat 7</a>
-        <a class="category" >cat 8</a>
-        <a class="category" >cat 9</a>
-        <a class="category" >cat 10</a>
-    </div>
 
-    <div id="row4">
-        <a class="sub_category" >sub 1</a>
-        <a class="sub_category" >sub 2</a>
-        <a class="sub_category" >sub 3</a>
-        <a class="sub_category" >sub 4</a>
-        <a class="sub_category" >sub 5</a>
-        <a class="sub_category" >sub 6</a>
-        <a class="sub_category" >sub 7</a>
-        <a class="sub_category" >sub 8</a>
-        <a class="sub_category" >sub 9</a>
-        <a class="sub_category" >sub 10</a>
-    </div>
 
 </hgroup>
 <div id="wrapper">
 
-<section id="dummy_lessons">
-</section>
+<section id="dummy"></section>
 
+<div id="row3">
+    <a class="category" >cat 1</a>
+    <a class="category" >cat 2</a>
+    <a class="category" >cat 3</a>
+    <a class="category" >cat 4</a>
+    <a class="category" >cat 5</a>
+    <a class="category" >cat 6</a>
+    <a class="category" >cat 7</a>
+    <a class="category" >cat 8</a>
+    <a class="category" >cat 9</a>
+    <a class="category" >cat 10</a>
+</div>
+
+<div id="row4">
+    <a class="sub_category" >sub 1</a>
+    <a class="sub_category" >sub 2</a>
+    <a class="sub_category" >sub 3</a>
+    <a class="sub_category" >sub 4</a>
+    <a class="sub_category" >sub 5</a>
+    <a class="sub_category" >sub 6</a>
+    <a class="sub_category" >sub 7</a>
+    <a class="sub_category" >sub 8</a>
+    <a class="sub_category" >sub 9</a>
+    <a class="sub_category" >sub 10</a>
+</div>
 
 <section id="lessons">
     <header>
@@ -175,234 +175,255 @@
         <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
     </header>
 
-    <ul>
-        <li onmouseover="show('description1')" onmouseout="hide('description1')">
-            <a><img src="img/normal_MN_47.jpg"></a>
+    <div id="player">
 
-            <div id="description1">
+        <div class="image">
+            <img src="http://placehold.it/150x100">
+            <a>Playing Podcast...</a>
+        </div>
+
+        <div class="description">
+
+            <a>
+                <b>Lesson Title</b>
+            </a>
+
+            <a>
+                <b>Viewd:</b> 00 times
+            </a>
+
+            <a>
+                <b>Date Added:</b> 00/00/00
+            </a>
+        </div>
+
+        <div class="track">
+            <a id="close_player">&nbsp;</a>
+            <audio id="podcast" controls="controls" draggable="false">
+                <!--<source>-->
+            </audio>
+
+            <ul>
+                <li><a class="icon" id="Script_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Microblog_icon">&nbsp;</a></li>
+                <li><a class="icon" id="QA_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Discussion_icon">&nbsp;</a></li>
+                <li><a class="icon" id="Presentation_icon">&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul id="list_of_lessons">
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
+
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description2')" onmouseout="hide('description2')">
-            <a><img src="img/Islam1.jpg"></a>
-
-            <div id="description2">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description3')" onmouseout="hide('description3')">
-            <a><img src="img/hijab.jpg"></a>
-
-            <div id="description3">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast</a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description4')" onmouseout="hide('description4')">
-            <a><img src="img/imam_askari.jpg"></a>
-
-            <div id="description4">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description5')" onmouseout="hide('description5')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description5">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description6')" onmouseout="hide('description6')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description6">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description7')" onmouseout="hide('description7')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description7">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-    </ul>
-
-    <ul>
-        <li onmouseover="show('description1')" onmouseout="hide('description1')">
-            <a><img src="img/normal_MN_47.jpg"></a>
-
-            <div id="description1">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description2')" onmouseout="hide('description2')">
-            <a><img src="img/Islam1.jpg"></a>
-
-            <div id="description2">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description3')" onmouseout="hide('description3')">
-            <a><img src="img/hijab.jpg"></a>
-
-            <div id="description3">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description4')" onmouseout="hide('description4')">
-            <a><img src="img/imam_askari.jpg"></a>
-
-            <div id="description4">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description5')" onmouseout="hide('description5')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description5">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description6')" onmouseout="hide('description6')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description6">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
-        <li onmouseover="show('description7')" onmouseout="hide('description7')">
-            <a><img src="img/islampray.jpg"></a>
-
-            <div id="description7">
+            <div class="description">
                 <p>
-                    <b>Category:</b><br>
-                    category-name<br>
-                    <b>Date Added:</b> 00/00/00<br>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
                 </p>
                    <span>
-                      <a href="">Play the Podcast </a>
+                      <a>Play the Podcast </a>
                    </span>
             </div>
             <a href="" class="lesson-title">Lesson Title</a>
         </li>
+        <li>
+            <a><img src="http://placehold.it/150x100"></a>
 
+            <div class="description">
+                <p>
+                    <b>Viewd:</b> 00 times<br>
+                    <b>Date Added:</b> 00/00/00<br><br>
+                </p>
+                   <span>
+                      <a>Play the Podcast </a>
+                   </span>
+            </div>
+            <a href="" class="lesson-title">Lesson Title</a>
+        </li>
     </ul>
 </section>
 
@@ -417,11 +438,6 @@
         </header>
 
         <ol>
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
             <li>Islam
                 <a class="vote-up">&nbsp;</a>
                 <a class="vote-down">&nbsp;</a>
@@ -514,7 +530,7 @@
     $('a.nav').click(function () {
 
         $('html, body').animate({
-            scrollTop:$('#' + this.title).offset().top - 215
+            scrollTop:$('#' + this.title).offset().top -280
         }, 2000);
 
         $('a.active').removeClass();
@@ -578,25 +594,33 @@
     //---------------------------------------------scroll down signing forms --------------------------------------
 
 
-//    $(document).ready(function () {
-//        $('#lessons ul li').onmouseover
-//
-//    });
-
-
-
-
 
 
 
     //----------------------------------show and hide lesson details on hover----------------------------------
-    function show(id) {
-        document.getElementById(id).style.visibility = "visible";
-    }
-    function hide(id) {
-        document.getElementById(id).style.visibility = "hidden";
-    }
+    $(document).ready(function () {
+        $('#lessons ul li').bind("mouseover", function () {
+            $(this).find('div.description').css("visibility", "visible");
+        });
+
+        $('#lessons ul li').bind("mouseout", function () {
+            $(this).find('div.description').css("visibility", "hidden");
+        });
+
+    });
     //----------------------------------show and hide lesson details on hover----------------------------------
+
+
+
+    //----------------------------------show and hide lesson podcast----------------------------------
+        $('div.description span a').bind("click", function () {
+            $('div#player').css("display", "table");
+        });
+
+        $('a#close_player').bind("click", function () {
+            $('div#player').css("display", "none");
+        });
+    //----------------------------------show and hide lesson podcast----------------------------------
 
 
     //---------------------------------- tab function in category section----------------------------------
@@ -607,21 +631,8 @@
                 items.removeClass('current');
                 $(this).addClass('current');
             });
-//                //hide all content divs and show current one
-//                $('div.tab-content').hide().eq(items.index($(this))).show('fast');
-//
-//                window.location.hash = $(this).attr('tab');
-//            });
-//        });
-//
-//        if (location.hash) {
-//            showTab(location.hash);
-//        }
-//        else {
-//            $('div.tab-content').hide().eq(items.index($(this))).show('fast');
-//        }
         });
-    })
+    });
     //---------------------------------- tab function in category section----------------------------------
 
 
