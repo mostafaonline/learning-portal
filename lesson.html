@@ -143,7 +143,7 @@
 
 <div id="row3">
     <a class="category" >cat 1</a>
-    <a class="category" >cat 2</a>
+    <a class="category active" >cat 2</a>
     <a class="category" >cat 3</a>
     <a class="category" >cat 4</a>
     <a class="category" >cat 5</a>
@@ -159,7 +159,7 @@
     <a class="sub_category" >sub 2</a>
     <a class="sub_category" >sub 3</a>
     <a class="sub_category" >sub 4</a>
-    <a class="sub_category" >sub 5</a>
+    <a class="sub_category active" >sub 5</a>
     <a class="sub_category" >sub 6</a>
     <a class="sub_category" >sub 7</a>
     <a class="sub_category" >sub 8</a>
@@ -169,24 +169,25 @@
 
 <section id="lessons">
     <header>
-        <a href="" class="title" title="go to lessons page">Lessons</a>
-        <a href="" class="latest" title="show latest entries">Latest</a>
-        <a href="" class="hottest" title="show popular entries">Most Popular</a>
-        <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
+        <h1>Lesson Title</h1>
+
+        <ul id="tag_bar">
+            <li><a>Tag 1</a></li>
+            <li><a>Tag 2</a></li>
+            <li><a>Tag 3</a></li>
+            <li><a>Tag 4</a></li>
+            <li><a>Tag 5</a></li>
+        </ul>
+
     </header>
 
-    <div id="player">
+    <div id="lesson_header">
 
         <div class="image">
             <img src="http://placehold.it/150x100">
-            <a>Playing Podcast...</a>
         </div>
 
         <div class="description">
-
-            <a>
-                <b>Lesson Title</b>
-            </a>
 
             <a>
                 <b>Viewd:</b> 00 times
@@ -198,293 +199,60 @@
         </div>
 
         <div class="track">
-            <a id="close_player">&nbsp;</a>
+
             <audio id="podcast" controls="controls" draggable="false">
                 <!--<source>-->
             </audio>
 
-            <ul id="lesson_sections">
-                <li><a class="icon" id="Script_icon">&nbsp;</a></li>
-                <li><a class="icon" id="Microblog_icon">&nbsp;</a></li>
-                <li><a class="icon" id="QA_icon">&nbsp;</a></li>
-                <li><a class="icon" id="Discussion_icon">&nbsp;</a></li>
-                <li><a class="icon" id="Presentation_icon">&nbsp;</a></li>
-            </ul>
         </div>
     </div>
 
-    <ul id="list_of_lessons">
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
+    <div id="Lesson_Content">
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="lesson.html"s class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
+        <ul class="nav">
+            <li><a title="Script" href="javascript:void(0);" class="current">Script</a></li>
+            <li><a title="MicroBlog" href="javascript:void(0);">Micro Blog</a></li>
+            <li><a title="QandA" href="javascript:void(0);">Q and A</a></li>
+            <li><a title="Discussion" href="javascript:void(0);">Discussion</a></li>
+            <li><a title="Presentation" href="javascript:void(0);">Presentation</a></li>
+            <li><a title="References" href="javascript:void(0);">References</a></li>
+        </ul>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="lesson.html" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
+        <div id="Tab_Content">
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast</a>
-                   </span>
+            <div id="Script" class="activeTab">
+                script
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
+            <div id="MicroBlog">
+                script3333
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
+            <div id="QandA">
+                script65747
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
+            <div id="Discussion">
+                script34857
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
+            <div id="Presentation">
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
+            <div id="References">
             </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
+        </div> <!-- END List Wrap -->
 
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
-
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
-
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
-
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
-
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-        <li>
-            <a><img src="http://placehold.it/150x100"></a>
-
-            <div class="description">
-                <p>
-                    <b>Viewd:</b> 00 times<br>
-                    <b>Date Added:</b> 00/00/00<br><br>
-                </p>
-                   <span>
-                      <a>Play the Podcast </a>
-                   </span>
-            </div>
-            <a href="" class="lesson-title">Lesson Title</a>
-        </li>
-    </ul>
+    </div> <!-- END Organic Tabs (Lesson Content) -->
 </section>
 
 
-<section id="suggestions">
-    <div id="topics">
-        <header>
-            <a href="" class="title">Suggestions</a>
-            <a href="" class="latest" title="show latest entries">Latest</a>
-            <a href="" class="hottest" title="show popular entries">Most Popular</a>
-            <a href="" class="rss" title="subscribe to this feed">&nbsp</a>
-        </header>
+<section id="recommendations">
+    <header>
+    <a href="" class="title" title="Recommended lessons">Recommended Lessons</a>
+    </header>
 
-        <ol>
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-            <li>Islam
-                <a class="vote-up">&nbsp;</a>
-                <a class="vote-down">&nbsp;</a>
-            </li>
-
-
-        </ol>
-    </div>
-
-    <div id="suggest">
-        <form id="suggest-something">
-            <p>not enough?</p>
-
-            <h2>Suggest a Topic!</h2>
-            <input type="email" placeholder=" Your Email Address (so that we can inform you)">
-            <input name="topic" type="text" placeholder=" Desired Topic">
-            <textarea name="description" placeholder=" Description of your topic"></textarea>
-            <button class="btn" type="submit">Submit!</button>
-            <button class="btn" type="reset">Clear</button>
-            <a class="btn" href="submission form">Fill out a detailed form</a>
-        </form>
-    </div>
 
 </section>
 
@@ -507,6 +275,24 @@
 <script src="js/vendor/jquery.animate-colors-min.js"></script>
 
 <script>
+
+
+    //---------------------------------------------lesson content tabbed area-----------------------------
+    $('#Lesson_Content ul.nav li a').click(function () {
+        if($(this).hasClass('current')) return;
+        else {
+            $('#Lesson_Content ul.nav li a').removeClass('current');
+            $(this).addClass('current');
+
+            $.when($('#Tab_Content div').fadeOut()).done(function() {
+                console.log(this);
+                $('#Tab_Content div#' + this.title).fadeIn();
+            }.bind(this));
+        }
+
+    });
+    //---------------------------------------------lesson content tabbed area-----------------------------
+
 
     //---------------------------------------------set menu items active on scroll-to-----------------------------
     $(document).scroll(function () {
@@ -601,6 +387,7 @@
 
     //----------------------------------show and hide lesson details on hover----------------------------------
     $(document).ready(function () {
+
         $('#lessons ul li').bind("mouseover", function () {
             $(this).find('div.description').css("visibility", "visible");
         });
@@ -612,17 +399,6 @@
     });
     //----------------------------------show and hide lesson details on hover----------------------------------
 
-
-
-    //----------------------------------show and hide lesson podcast----------------------------------
-        $('div.description span a').bind("click", function () {
-            $('div#player').css("display", "table");
-        });
-
-        $('a#close_player').bind("click", function () {
-            $('div#player').css("display", "none");
-        });
-    //----------------------------------show and hide lesson podcast----------------------------------
 
 
     //---------------------------------- tab function in category section----------------------------------

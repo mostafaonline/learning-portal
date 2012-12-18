@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412c1596-3719-4ba0-aa12-8e249e19f305" name="Default" comment="git and rubymine integrated">
-      <change type="MOVED" beforePath="C:\Users\m.Nasehi\RubymineProjects\Learning Portal\lessons.html" afterPath="$PROJECT_DIR$/categories.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/vote.png" afterPath="$PROJECT_DIR$/img/vote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/categories.html" afterPath="$PROJECT_DIR$/categories.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="$PROJECT_DIR$/css/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.sass" afterPath="$PROJECT_DIR$/sass/screen.sass" />
@@ -29,49 +29,27 @@
     <groupTables value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4207459">
+    <splitter split-orientation="horizontal" split-proportion="0.6201867">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.39275765">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/css/screen.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="715" column="25" selection-start="19703" selection-end="19703" vertical-scroll-proportion="8.044138">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/sass/screen.sass">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="305" column="13" selection-start="5549" selection-end="5549" vertical-scroll-proportion="0.53103447">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sass/screen.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="709" column="85" selection-start="12947" selection-end="12947" vertical-scroll-proportion="0.74898785">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="categories.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/categories.html">
+          <file leaf-file-name="lesson.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lesson.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="141" column="18" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.33426967">
-                  <folding>
-                    <marker date="1355238005191" expanded="true" signature="1524:1776" placeholder="..." />
-                    <marker date="1355238005191" expanded="true" signature="1617:1645" placeholder="..." />
-                    <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                  </folding>
+                <state line="205" column="51" selection-start="6501" selection-end="6501" vertical-scroll-proportion="0.5954416">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -97,8 +75,10 @@
         <option value="$PROJECT_DIR$/css/screen.css" />
         <option value="$PROJECT_DIR$/lessons.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/sass/screen.sass" />
         <option value="$PROJECT_DIR$/categories.html" />
+        <option value="$PROJECT_DIR$/js/organictabs.jquery.js" />
+        <option value="$PROJECT_DIR$/lesson.html" />
+        <option value="$PROJECT_DIR$/sass/screen.sass" />
       </list>
     </option>
   </component>
@@ -167,6 +147,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning Portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -174,14 +168,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="last_opened_file_path" value="C:/Ruby193/bin/sass.bat" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\m.Nasehi\RubymineProjects\Learning Portal\js" />
       <recent name="C:\Users\m.Nasehi\RubymineProjects\Learning Portal" />
     </key>
   </component>
@@ -321,18 +316,18 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2650334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08484525" sideWeight="0.84966594" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08537887" sideWeight="0.85300666" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15033408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14699332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -395,18 +390,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="35" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="8" selection-start="1751" selection-end="1751" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="12" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -461,41 +444,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="25" selection-start="19703" selection-end="19703" vertical-scroll-proportion="8.044138">
+        <state line="715" column="25" selection-start="19703" selection-end="19703" vertical-scroll-proportion="0.9393104">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="264" column="24" selection-start="8536" selection-end="8536" vertical-scroll-proportion="0.68820226">
+        <state line="203" column="33" selection-start="6811" selection-end="6811" vertical-scroll-proportion="1.3018599">
           <folding>
-            <marker date="1355237218376" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1355237218376" expanded="true" signature="-1:-1" placeholder="..." />
-            <element signature="tag#div#0;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#4;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1355817569405" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1355817569405" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/categories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="18" selection-start="4910" selection-end="4910" vertical-scroll-proportion="0.33426967">
+        <state line="242" column="33" selection-start="8023" selection-end="8023" vertical-scroll-proportion="0.7782546">
           <folding>
-            <marker date="1355238005191" expanded="true" signature="1524:1776" placeholder="..." />
-            <marker date="1355238005191" expanded="true" signature="1617:1645" placeholder="..." />
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1355817583593" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1355817583593" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="51" selection-start="6501" selection-end="6501" vertical-scroll-proportion="0.5954416">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="13" selection-start="5549" selection-end="5549" vertical-scroll-proportion="0.53103447">
+        <state line="709" column="85" selection-start="12947" selection-end="12947" vertical-scroll-proportion="0.74898785">
           <folding />
         </state>
       </provider>
