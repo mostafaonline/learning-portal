@@ -23,7 +23,7 @@ body
   margin-left: auto
   position: relative
   display: table
-  overflow: hidden
+  //overflow: hidden
 
 footer
   display: table-row
@@ -373,7 +373,7 @@ section
     padding: 0
 
 
-    a
+    a:not(.title)
       display: inline-block
       margin: 7px 1px
       padding: 3px 20px
@@ -389,17 +389,29 @@ section
 
 
     a.title
-      background: rgba(103, 187, 255, 0.7)
+      color: rgb(69, 168, 255)
       width: 135px
       font-weight: bold
+      font-size: 20px
+      display: inline-block
+      margin: 2px 5px
+      padding: 3px 17px
+      vertical-align: middle
+      text-align: center
+      border-right: 2px solid rgba(0,0,0, 0.7)
+      border-radius: 0
+      -moz-border-radius: 0
+      -webkit-border-radius: 0
 
-    a.title:hover
+
+
+    //a.title:hover
       background: rgba(103, 187, 255, 1)
 
 
 
     a.latest
-      background: rgba(179, 217, 0, 0.7)
+      background: rgba(179, 217, 0, 0.5)
       //width: 50px
 
     a.latest:hover
@@ -408,7 +420,7 @@ section
 
 
     a.hottest
-      background: rgba(255, 198, 0, 0.7)
+      background: rgba(255, 198, 0, 0.5)
       //width: 70px
 
     a.hottest:hover
@@ -688,6 +700,7 @@ section
 
 //----------Lesson Content Tabbed Area-----------------------------------------------
 #Lesson_Content
+  overflow: hidden
 
   ul
     list-style-type: none
@@ -759,10 +772,84 @@ section
 
 
 
+
+
+
+
+//----------Lesson Content - Script Tab-----------------------------------------------
+
+#Script
+  p
+    margin: 0
+
+  table#meta-data
+    width: 910px
+    margin: 0 auto
+    background: #f7f7f7
+    -moz-box-shadow: 0 0 5px #888
+    -webkit-box-shadow: 0 0 5px#888
+    box-shadow: 0 0 5px #888
+    border: 0
+
+    tr.titles
+      background: #888
+      color: #f0f0f0
+      font-weight: bold
+
+      td
+        padding: 5px 0 5px 20px
+
+    td#objectives
+      border-right: 1px solid #888
+      width: 610px
+
+    ul
+      list-style-type: circle
+
+
+
+  div
+    p
+      text-indent: 15px
+      padding: 30px
+      text-align: justify
+
+  table.verse
+    direction: rtl
+    margin: 20px auto
+    background: #f7f7f7
+    -moz-box-shadow: 0 0 5px #888
+    -webkit-box-shadow: 0 0 5px#888
+    box-shadow: 0 0 5px #888
+    border: 0
+
+
+    td
+      padding: 2px 10px
+      text-align: center
+      border-right: 1px solid #bbb
+
+
+
+
+
+
+
+//----------Lesson Content - Script Tab-----------------------------------------------
+
+
+
+
+
+
+
+
+
 //----------Lesson Content - Microblog Tab-----------------------------------------------
 #MicroBlog
   padding: 0
   position: relative
+
 
   ul
     padding: 0
@@ -1018,6 +1105,10 @@ section#QD, section#suggestions
       margin: 2px
       background: #f7f7f7
       border-bottom: 1px groove #888
+      -webkit-transition: background 0.8s ease-out
+      -moz-transition: background 0.8s ease-out
+      -o-transition: background 0.8s ease-out
+      transition: background 0.8s ease-out
 
       a
         text-decoration: none
@@ -1048,8 +1139,6 @@ section#QD, section#suggestions
         p
           padding: 0 10px
 
-
-
     li:first-of-type
       margin-top: -15px
 
@@ -1065,7 +1154,7 @@ section#QD, section#suggestions
       border-bottom: none
 
     li:hover
-      background: #ededed
+      background: #dfdfdf
       //-moz-box-shadow: inset 0 0 5px #555
       //-webkit-box-shadow: inset 0 0 5px#555
       //box-shadow: inset 0 0 5px #555

@@ -15,8 +15,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  display: table;
-  overflow: hidden; }
+  display: table; }
 
 footer {
   display: table-row;
@@ -285,7 +284,7 @@ section {
     margin: 1px auto 0;
     border-bottom: 1px groove #888888;
     padding: 0; }
-    section header a {
+    section header a:not(.title) {
       display: inline-block;
       margin: 7px 1px;
       padding: 3px 20px;
@@ -298,17 +297,25 @@ section {
       -webkit-box-shadow: inset 0 0 5px #888888;
       box-shadow: inset 0 0 5px #888888; }
     section header a.title {
-      background: rgba(103, 187, 255, 0.7);
+      color: #45a8ff;
       width: 135px;
-      font-weight: bold; }
-    section header a.title:hover {
-      background: #67bbff; }
+      font-weight: bold;
+      font-size: 20px;
+      display: inline-block;
+      margin: 2px 5px;
+      padding: 3px 17px;
+      vertical-align: middle;
+      text-align: center;
+      border-right: 2px solid rgba(0, 0, 0, 0.7);
+      border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0; }
     section header a.latest {
-      background: rgba(179, 217, 0, 0.7); }
+      background: rgba(179, 217, 0, 0.5); }
     section header a.latest:hover {
       background: #b3d900; }
     section header a.hottest {
-      background: rgba(255, 198, 0, 0.7); }
+      background: rgba(255, 198, 0, 0.5); }
     section header a.hottest:hover {
       background: #ffc600; }
     section header a.rss {
@@ -505,55 +512,95 @@ section {
       background: #555555;
       color: white; }
 
-#Lesson_Content ul {
-  list-style-type: none; }
-#Lesson_Content ul.nav {
-  padding: 0;
-  margin: 5px 24px 0; }
-  #Lesson_Content ul.nav li {
-    display: inline-block; }
-    #Lesson_Content ul.nav li a, #Lesson_Content ul.nav li a:visited, #Lesson_Content ul.nav li a:active {
-      display: block;
-      background: #dddddd;
-      padding: 2px 5px;
-      width: 120px;
-      margin: auto 0;
-      height: 25px;
-      text-align: center;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      -webkit-border-bottom-left-radius: 0;
-      -webkit-border-bottom-right-radius: 0;
-      -webkit-transition: width 1.2s ease-out;
-      -moz-transition: width 1.2s ease-out;
-      -o-transition: width 1.2s ease-out;
-      transition: width 1.2s ease-out; }
-    #Lesson_Content ul.nav li a:hover, #Lesson_Content ul.nav li a:focus, #Lesson_Content ul.nav li a.current {
-      background: #b3b3b3;
-      border: none;
-      outline: 0; }
-    #Lesson_Content ul.nav li a.current {
-      width: 228px;
-      font-weight: bold;
-      background-image: linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-      background-image: -o-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-      background-image: -moz-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-      background-image: -webkit-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-      background-image: -ms-linear-gradient(bottom, #b3b3b3 0%, #747474 90%); }
-#Lesson_Content div#Tab_Content {
-  margin-top: 0;
-  background: #b3b3b3;
-  padding: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0; }
-  #Lesson_Content div#Tab_Content > div {
-    display: none;
-    margin: 0 auto;
-    padding: 0; }
-  #Lesson_Content div#Tab_Content > div.activeTab {
-    display: block; }
+#Lesson_Content {
+  overflow: hidden; }
+  #Lesson_Content ul {
+    list-style-type: none; }
+  #Lesson_Content ul.nav {
+    padding: 0;
+    margin: 5px 24px 0; }
+    #Lesson_Content ul.nav li {
+      display: inline-block; }
+      #Lesson_Content ul.nav li a, #Lesson_Content ul.nav li a:visited, #Lesson_Content ul.nav li a:active {
+        display: block;
+        background: #dddddd;
+        padding: 2px 5px;
+        width: 120px;
+        margin: auto 0;
+        height: 25px;
+        text-align: center;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-transition: width 1.2s ease-out;
+        -moz-transition: width 1.2s ease-out;
+        -o-transition: width 1.2s ease-out;
+        transition: width 1.2s ease-out; }
+      #Lesson_Content ul.nav li a:hover, #Lesson_Content ul.nav li a:focus, #Lesson_Content ul.nav li a.current {
+        background: #b3b3b3;
+        border: none;
+        outline: 0; }
+      #Lesson_Content ul.nav li a.current {
+        width: 228px;
+        font-weight: bold;
+        background-image: linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
+        background-image: -o-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
+        background-image: -moz-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
+        background-image: -webkit-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
+        background-image: -ms-linear-gradient(bottom, #b3b3b3 0%, #747474 90%); }
+  #Lesson_Content div#Tab_Content {
+    margin-top: 0;
+    background: #b3b3b3;
+    padding: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0; }
+    #Lesson_Content div#Tab_Content > div {
+      display: none;
+      margin: 0 auto;
+      padding: 0; }
+    #Lesson_Content div#Tab_Content > div.activeTab {
+      display: block; }
+
+#Script p {
+  margin: 0; }
+#Script table#meta-data {
+  width: 910px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  -moz-box-shadow: 0 0 5px #888888;
+  -webkit-box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px #888888;
+  border: 0; }
+  #Script table#meta-data tr.titles {
+    background: #888888;
+    color: #f0f0f0;
+    font-weight: bold; }
+    #Script table#meta-data tr.titles td {
+      padding: 5px 0 5px 20px; }
+  #Script table#meta-data td#objectives {
+    border-right: 1px solid #888888;
+    width: 610px; }
+  #Script table#meta-data ul {
+    list-style-type: circle; }
+#Script div p {
+  text-indent: 15px;
+  padding: 30px;
+  text-align: justify; }
+#Script table.verse {
+  direction: rtl;
+  margin: 20px auto;
+  background: #f7f7f7;
+  -moz-box-shadow: 0 0 5px #888888;
+  -webkit-box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px #888888;
+  border: 0; }
+  #Script table.verse td {
+    padding: 2px 10px;
+    text-align: center;
+    border-right: 1px solid #bbbbbb; }
 
 #MicroBlog {
   padding: 0;
@@ -740,7 +787,11 @@ section#QD, section#suggestions {
     overflow: hidden;
     margin: 2px;
     background: #f7f7f7;
-    border-bottom: 1px groove #888888; }
+    border-bottom: 1px groove #888888;
+    -webkit-transition: background 0.8s ease-out;
+    -moz-transition: background 0.8s ease-out;
+    -o-transition: background 0.8s ease-out;
+    transition: background 0.8s ease-out; }
     #Questions ul li a, #Discussions ul li a {
       text-decoration: none;
       display: table-cell;
@@ -775,7 +826,7 @@ section#QD, section#suggestions {
     -webkit-border-bottom-right-radius: 5px;
     border-bottom: none; }
   #Questions ul li:hover, #Discussions ul li:hover {
-    background: #ededed; }
+    background: #dfdfdf; }
 
 #categories ul#tabs {
   height: 100%;

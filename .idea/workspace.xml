@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412c1596-3719-4ba0-aa12-8e249e19f305" name="Default" comment="git and rubymine integrated">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/screen.css" afterPath="$PROJECT_DIR$/css/screen.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lesson.html" afterPath="$PROJECT_DIR$/lesson.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.sass" afterPath="$PROJECT_DIR$/sass/screen.sass" />
@@ -27,13 +26,13 @@
     <groupTables value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45308805">
+    <splitter split-orientation="horizontal" split-proportion="0.3974201">
       <split-first>
         <leaf>
           <file leaf-file-name="screen.sass" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/screen.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="861" column="19" selection-start="16096" selection-end="16096" vertical-scroll-proportion="1.0">
+                <state line="796" column="23" selection-start="14636" selection-end="14636" vertical-scroll-proportion="0.6564581">
                   <folding />
                 </state>
               </provider>
@@ -46,14 +45,18 @@
           <file leaf-file-name="lesson.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lesson.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="228" column="48" selection-start="7199" selection-end="7199" vertical-scroll-proportion="0.5868946">
+                <state line="230" column="46" selection-start="7344" selection-end="7344" vertical-scroll-proportion="0.32">
                   <folding>
-                    <marker date="1356184505104" expanded="true" signature="1524:1776" placeholder="..." />
-                    <marker date="1356184505104" expanded="true" signature="1617:1645" placeholder="..." />
-                    <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#0;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <marker date="1356364704620" expanded="true" signature="1524:1776" placeholder="..." />
+                    <marker date="1356364704620" expanded="true" signature="1617:1645" placeholder="..." />
+                    <element signature="tag#p#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#p#1;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#table#1;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#p#2;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#table#2;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#p#3;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#li#0;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#li#2;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -62,7 +65,6 @@
                     <element signature="tag#li#1;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#li#2;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#li#3;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#2;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -197,11 +199,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="last_opened_file_path" value="C:/Ruby193/bin/sass.bat" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -360,18 +362,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1034" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13020277" sideWeight="0.85300666" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13127" sideWeight="0.87861913" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14699332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12138084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -504,21 +506,23 @@
     </entry>
     <entry file="file://C:/123.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="12" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="12" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="48" selection-start="7199" selection-end="7199" vertical-scroll-proportion="0.5868946">
+        <state line="230" column="46" selection-start="7344" selection-end="7344" vertical-scroll-proportion="0.32">
           <folding>
-            <marker date="1356184505104" expanded="true" signature="1524:1776" placeholder="..." />
-            <marker date="1356184505104" expanded="true" signature="1617:1645" placeholder="..." />
-            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1356364704620" expanded="true" signature="1524:1776" placeholder="..." />
+            <marker date="1356364704620" expanded="true" signature="1617:1645" placeholder="..." />
+            <element signature="tag#p#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#0;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#p#1;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#1;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#p#2;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#table#2;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#p#3;tag#div#0;tag#div#0;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#0;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#1;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#2;tag#ul#0;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
@@ -527,14 +531,13 @@
             <element signature="tag#li#1;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#2;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#li#3;tag#ul#1;tag#div#1;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#div#0;tag#div#1;tag#section#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="861" column="19" selection-start="16096" selection-end="16096" vertical-scroll-proportion="1.0">
+        <state line="796" column="23" selection-start="14636" selection-end="14636" vertical-scroll-proportion="0.6564581">
           <folding />
         </state>
       </provider>
