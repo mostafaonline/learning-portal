@@ -827,12 +827,15 @@
 
     //----------------------------------show and hide lesson details on hover----------------------------------
     $(document).ready(function () {
-        $('#lessons ul li').bind("mouseover", function () {
-            $(this).find('div.description').css("visibility", "visible");
+
+        $('#lessons ul li').bind("mouseenter", function () {
+            $(this).find('div.description').fadeIn();
+            return
         });
 
-        $('#lessons ul li').bind("mouseout", function () {
-            $(this).find('div.description').css("visibility", "hidden");
+        $('#lessons ul li').bind("mouseleave", function () {
+            $(this).find('div.description').fadeOut();
+            return
         });
 
     });

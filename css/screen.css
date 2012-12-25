@@ -10,6 +10,11 @@ body {
 .hidden {
   display: none; }
 
+.not-round, #site-header, #row1 #logo, #row1 #signing #sign-up #refresh, #row2, section header, section header a.title, #lessons #player, #lessons #lesson_header, #MicroBlog ul li, #MicroBlog #summaries li h2, #MicroBlog #summaries li div a.switch, #MicroBlog #details > li h2, #MicroBlog #details > li a.switch, #MicroBlog #details h3, #QandA div, #Discussion div.post-body, #Discussion div.post-body div.reply, #Questions ul li, #Discussions ul li, #Questions ul li a.profile, #Discussions ul li a.profile, #categories .tab-content ul.sub > li h3 p, #categories .tab-content ul.sub > li > a, form#suggest-something h2 {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0; }
+
 #wrapper, section {
   width: 960px;
   margin-right: auto;
@@ -24,9 +29,6 @@ footer {
 #site-header {
   background: #444444;
   padding-bottom: 0;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   position: fixed;
   z-index: 9999;
   width: 100%;
@@ -39,14 +41,22 @@ footer {
   font-size: 0.8em;
   font-weight: bold;
   padding: 0.5em 1em;
-  border: none; }
+  border: none;
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out; }
 
 a, a:visited {
   color: black;
   text-decoration: none;
   outline: 0;
   cursor: pointer;
-  cursor: hand; }
+  cursor: hand;
+  -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out; }
 
 .btn:hover {
   background: #c9ef00; }
@@ -60,7 +70,7 @@ form input:active, form input:hover, form input:focus, form textarea:active, for
   border-color: #888888;
   color: #444444; }
 
-.active {
+.active, .current-cat, .current-sub {
   background: #67bbff !important; }
 
 a.vote-up, a.vote-down {
@@ -70,7 +80,11 @@ a.vote-up, a.vote-down {
   width: 20px;
   height: 20px;
   padding: 0;
-  border: none; }
+  border: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; }
 
 a.vote-up {
   background: url("../img/vote.png") 0px 0px; }
@@ -123,10 +137,7 @@ a.vote-down:hover {
     width: 120px;
     height: 100px;
     padding-right: 20px;
-    background: url("../img/logo.png") no-repeat top;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0; }
+    background: url("../img/logo.png") no-repeat top; }
   #row1 #signing {
     display: table-cell;
     position: relative;
@@ -201,17 +212,11 @@ a.vote-down:hover {
     #row1 #signing #sign-up #refresh {
       margin-top: 0;
       background: silver;
-      text-decoration: none;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0; }
+      text-decoration: none; }
 
 #row2 {
   width: 100%;
   background: #fcfcfc;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   padding: 5px 0;
   margin-bottom: 2px; }
   #row2 #wrap {
@@ -225,13 +230,13 @@ a.vote-down:hover {
       width: 560px;
       padding-left: 10px; }
       #row2 #wrap nav a, #row2 #wrap nav a:visited {
-        color: #222222;
-        display: inline-block;
-        background: white;
         -webkit-transition: background 1.2s ease-out;
         -moz-transition: background 1.2s ease-out;
         -o-transition: background 1.2s ease-out;
         transition: background 1.2s ease-out;
+        color: #222222;
+        display: inline-block;
+        background: white;
         padding: 3px 10px;
         margin: 10px 0px;
         text-decoration: none;
@@ -278,9 +283,6 @@ section {
   section header {
     display: table;
     width: 98%;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     margin: 1px auto 0;
     border-bottom: 1px groove #888888;
     padding: 0; }
@@ -306,10 +308,7 @@ section {
       padding: 3px 17px;
       vertical-align: middle;
       text-align: center;
-      border-right: 2px solid rgba(0, 0, 0, 0.7);
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0; }
+      border-right: 2px solid rgba(0, 0, 0, 0.7); }
     section header a.latest {
       background: rgba(179, 217, 0, 0.5); }
     section header a.latest:hover {
@@ -392,10 +391,7 @@ section {
 #lessons #player, #lessons #lesson_header {
   position: relative;
   width: 100%;
-  background: #444444;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0; }
+  background: #444444; }
   #lessons #player div, #lessons #lesson_header div {
     float: left; }
     #lessons #player div ul li, #lessons #lesson_header div ul li {
@@ -472,8 +468,8 @@ section {
     #lessons ul#list_of_lessons li img {
       height: 100px;
       width: 150px; }
-    #lessons ul#list_of_lessons li div {
-      visibility: hidden;
+    #lessons ul#list_of_lessons li div.description {
+      display: none;
       background: rgba(0, 0, 0, 0.7);
       height: 100px;
       width: 150px;
@@ -481,13 +477,13 @@ section {
       top: 10px;
       left: 0;
       border: 1px solid #888888; }
-      #lessons ul#list_of_lessons li div p {
+      #lessons ul#list_of_lessons li div.description p {
         font-size: 11px;
         color: #fcfcfc;
         margin: 10px 10px 7px 10px; }
-        #lessons ul#list_of_lessons li div p b {
+        #lessons ul#list_of_lessons li div.description p b {
           color: #59c5ff; }
-      #lessons ul#list_of_lessons li div span {
+      #lessons ul#list_of_lessons li div.description span {
         display: block;
         background: #eeeeee url("../img/play.png") center left no-repeat;
         height: 30px;
@@ -495,7 +491,7 @@ section {
         margin: 0 10px;
         text-align: right;
         padding-left: 8px; }
-        #lessons ul#list_of_lessons li div span a, #lessons ul#list_of_lessons li div span a:hover, #lessons ul#list_of_lessons li div span a:active, #lessons ul#list_of_lessons li div span a:visited {
+        #lessons ul#list_of_lessons li div.description span a, #lessons ul#list_of_lessons li div.description span a:hover, #lessons ul#list_of_lessons li div.description span a:active, #lessons ul#list_of_lessons li div.description span a:visited {
           font-size: 11px;
           color: #222222;
           width: 110px;
@@ -520,15 +516,15 @@ section {
     padding: 0;
     margin: 5px 24px 0; }
     #Lesson_Content ul.nav li {
-      display: inline-block; }
+      display: inline-block;
+      text-align: center; }
       #Lesson_Content ul.nav li a, #Lesson_Content ul.nav li a:visited, #Lesson_Content ul.nav li a:active {
         display: block;
         background: #dddddd;
-        padding: 2px 5px;
+        padding: 8px 5px 4px;
         width: 120px;
         margin: auto 0;
         height: 25px;
-        text-align: center;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         -webkit-border-bottom-left-radius: 0;
@@ -538,16 +534,17 @@ section {
         -o-transition: width 1.2s ease-out;
         transition: width 1.2s ease-out; }
       #Lesson_Content ul.nav li a:hover, #Lesson_Content ul.nav li a:focus, #Lesson_Content ul.nav li a.current {
-        background: #b3b3b3;
+        background: #555555;
+        color: #ffc600;
         border: none;
         outline: 0; }
       #Lesson_Content ul.nav li a.current {
         width: 228px;
         font-weight: bold;
-        background-image: linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-        background-image: -o-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-        background-image: -moz-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
-        background-image: -webkit-linear-gradient(bottom, #b3b3b3 0%, #747474 90%);
+        background-image: linear-gradient(bottom, #b3b3b3 0%, black 90%);
+        background-image: -o-linear-gradient(bottom, #b3b3b3 0%, black 90%);
+        background-image: -moz-linear-gradient(bottom, #b3b3b3 0%, black 90%);
+        background-image: -webkit-linear-gradient(bottom, #b3b3b3 0%, black 90%);
         background-image: -ms-linear-gradient(bottom, #b3b3b3 0%, #747474 90%); }
   #Lesson_Content div#Tab_Content {
     margin-top: 0;
@@ -596,11 +593,20 @@ section {
   -moz-box-shadow: 0 0 5px #888888;
   -webkit-box-shadow: 0 0 5px #888888;
   box-shadow: 0 0 5px #888888;
-  border: 0; }
+  border: 0;
+  font-family: Traditional Arabic, Traditional Arabic, Simplified Arabic, Verdana, Tahoma;
+  font-size: 16pt;
+  font-style: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-variant: normal;
+  color: black; }
   #Script table.verse td {
     padding: 2px 10px;
     text-align: center;
     border-right: 1px solid #bbbbbb; }
+    #Script table.verse td span {
+      color: #176200; }
 
 #MicroBlog {
   padding: 0;
@@ -610,10 +616,7 @@ section {
     margin: 0; }
     #MicroBlog ul li {
       padding: 0;
-      margin: 0;
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0; }
+      margin: 0; }
   #MicroBlog #summaries {
     display: block; }
     #MicroBlog #summaries li:nth-child(odd) {
@@ -623,10 +626,7 @@ section {
       #MicroBlog #summaries li h2 {
         padding: 10px 0 2px 10px;
         margin: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 0;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0; }
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
       #MicroBlog #summaries li div {
         position: relative;
         padding: 10px; }
@@ -642,13 +642,11 @@ section {
           bottom: 0;
           background: rgba(0, 0, 0, 0.2) url("../img/details.png") center center no-repeat;
           height: 100%;
-          border-radius: 0;
-          -moz-border-radius: 0;
-          -webkit-border-radius: 0;
-          transition: opacity 0.7s ease-in-out;
-          -moz-transition: opacity 0.7s ease-in-out;
-          -webkit-transition: opacity 0.7s ease-in-out;
-          padding: 0 auto; }
+          padding: 0 auto;
+          -webkit-transition: opacity 1s ease-out;
+          -moz-transition: opacity 1s ease-out;
+          -o-transition: opacity 1s ease-out;
+          transition: opacity 1s ease-out; }
     #MicroBlog #summaries li:hover a.switch {
       opacity: 0.9; }
   #MicroBlog #details > li {
@@ -660,10 +658,7 @@ section {
       padding: 10px 10px 2px 10px;
       margin: 0;
       margin-right: 10px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0; }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
     #MicroBlog #details > li div span {
       padding-left: 10px; }
     #MicroBlog #details > li div p {
@@ -678,18 +673,13 @@ section {
       bottom: 0;
       background: rgba(0, 0, 0, 0.2) url("../img/return.png") top center no-repeat;
       height: 100%;
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
-      transition: opacity 0.7s ease-in-out;
-      -moz-transition: opacity 0.7s ease-in-out;
-      -webkit-transition: opacity 0.7s ease-in-out; }
+      -webkit-transition: opacity 0.7s ease-out;
+      -moz-transition: opacity 0.7s ease-out;
+      -o-transition: opacity 0.7s ease-out;
+      transition: opacity 0.7s ease-out; }
   #MicroBlog #details > li:hover a.switch {
     opacity: 0.9; }
   #MicroBlog #details h3 {
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     border-bottom: 1px solid white;
     margin: 50px 0 0 0;
     padding-bottom: 5px;
@@ -712,9 +702,6 @@ section {
   left: 950px; }
 
 #QandA div {
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
   padding: 0; }
 #QandA .QAbody {
   margin: 0 auto;
@@ -745,6 +732,21 @@ section {
   border-top-left-radius: 0;
   -webkit-border-top-left-radius: 0;
   -webkit-border-top-right-radius: 0; }
+
+#Discussion p {
+  padding-bottom: 15px; }
+#Discussion div.post-body {
+  padding: 20px 30px 0;
+  border-bottom: 1px solid #eeeeee; }
+  #Discussion div.post-body span.id {
+    font-weight: bold; }
+  #Discussion div.post-body div.reply {
+    background: rgba(0, 0, 0, 0.1) url(../img/reply.png) top left no-repeat;
+    padding-top: 15px;
+    padding-left: 50px;
+    border-top: 1px solid #eeeeee; }
+#Discussion div.post-body:nth-child(even) {
+  background: rgba(0, 0, 0, 0.1); }
 
 section#QD, section#suggestions {
   background: transparent;
@@ -779,9 +781,6 @@ section#QD, section#suggestions {
   width: 100%;
   padding: 0; }
   #Questions ul li, #Discussions ul li {
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     padding: 10px;
     height: 80px;
     overflow: hidden;
@@ -805,9 +804,6 @@ section#QD, section#suggestions {
       text-align: center;
       font-weight: bold;
       border-right: 2px dashed #67bbff;
-      border-radius: 0;
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
       font-size: 0.7em; }
     #Questions ul li a.post, #Discussions ul li a.post {
       text-align: justify;
@@ -908,9 +904,6 @@ section#QD, section#suggestions {
           top: 0;
           right: 0;
           padding: 5px;
-          border-radius: 0;
-          -moz-border-radius: 0;
-          -webkit-border-radius: 0;
           border-top-right-radius: 5px;
           -moz-border-top-right-radius: 5px;
           -webkit-border-top-right-radius: 5px;
@@ -926,8 +919,6 @@ section#QD, section#suggestions {
         text-align: center;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
         background: rgba(153, 192, 0, 0.5); }
       #categories .tab-content ul.sub > li > a:hover {
         background: #99c000; }
@@ -944,7 +935,11 @@ section#QD, section#suggestions {
       height: 30px;
       background: #cfcfcf;
       cursor: hand;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: background 0.8s ease-out;
+      -moz-transition: background 0.8s ease-out;
+      -o-transition: background 0.8s ease-out;
+      transition: background 0.8s ease-out; }
       #topics ol li a {
         display: inline-block;
         margin-left: 10px;
@@ -971,9 +966,6 @@ form#suggest-something {
     border-bottom: 1px solid #cccccc;
     margin: 5px 0 10px;
     padding-left: 10px;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     color: #67bbff; }
   form#suggest-something input, form#suggest-something textarea {
     color: #888888;

@@ -9,12 +9,20 @@ body
   background: rgb(232, 232, 232)
   font-family: Segoe UI, Calibri
 
+@mixin trans($what, $duration)
+  -webkit-transition: $what $duration ease-out
+  -moz-transition:  $what $duration ease-out
+  -o-transition: $what $duration ease-out
+  transition: $what $duration ease-out
 
 
 .hidden
   display: none
 
-
+.not-round
+  border-radius: 0
+  -moz-border-radius: 0
+  -webkit-border-radius: 0
 
 
 #wrapper, section
@@ -30,11 +38,9 @@ footer
   width: $wrapper-width
 
 #site-header
+  @extend .not-round
   background: rgb(68, 68, 68)
   padding-bottom: 0
-  border-radius: 0
-  -moz-border-radius: 0
-  -webkit-border-radius: 0
   position: fixed
   z-index: 9999
   width: 100%
@@ -49,6 +55,8 @@ footer
   font-weight: bold
   padding: 0.5em 1em
   border: none
+  @include trans(background, 1s)
+
 
 a, a:visited
   color: #000000
@@ -56,6 +64,8 @@ a, a:visited
   outline: 0
   cursor: pointer
   cursor: hand
+  @include trans(background, 1s)
+
 
 .btn:hover
   background: #c9ef00
@@ -71,7 +81,7 @@ form
     border-color: #888
     color: #444
 
-.active
+.active, .current-cat, .current-sub
   background: #67bbff !important
 
 a.vote-up, a.vote-down
@@ -82,6 +92,10 @@ a.vote-up, a.vote-down
   height: 20px
   padding: 0
   border: none
+  -webkit-transition: none
+  -moz-transition: none
+  -o-transition: none
+  transition: none
 
 a.vote-up
   background: url("../img/vote.png") 0px 0px
@@ -141,14 +155,13 @@ a.vote-down:hover
     -webkit-border-bottom-right-radius: 5px
 
   #logo
+    @extend .not-round
     display: table-cell
     width: 120px
     height: 100px
     padding-right: 20px
     background: url("../img/logo.png") no-repeat top
-    border-radius: 0
-    -moz-border-radius: 0
-    -webkit-border-radius: 0
+
 
 
   #signing
@@ -250,12 +263,11 @@ a.vote-down:hover
         margin-top: 10px
 
       #refresh
+        @extend .not-round
         margin-top: 0
         background: #c0c0c0
         text-decoration: none
-        -webkit-border-radius: 0
-        -moz-border-radius: 0
-        border-radius: 0
+
 
 
 
@@ -271,11 +283,9 @@ a.vote-down:hover
 //----------navigation-and-search-------------------------------------------
 
 #row2
+  @extend .not-round
   width: 100%
   background: #fcfcfc
-  border-radius: 0
-  -moz-border-radius: 0
-  -webkit-border-radius: 0
   padding: 5px 0
   margin-bottom: 2px
 
@@ -294,13 +304,10 @@ a.vote-down:hover
 
 
       a, a:visited
+        @include trans(background, 1.2s)
         color: #222
         display: inline-block
         background: #fff
-        -webkit-transition: background 1.2s ease-out
-        -moz-transition: background 1.2s ease-out
-        -o-transition: background 1.2s ease-out
-        transition: background 1.2s ease-out
         padding: 3px 10px
         margin: 10px 0px
         text-decoration: none
@@ -363,11 +370,9 @@ section
   box-shadow: 0 0 5px #888
 
   header
+    @extend .not-round
     display: table
     width: 98%
-    border-radius: 0
-    -moz-border-radius: 0
-    -webkit-border-radius: 0
     margin: 1px auto 0
     border-bottom: 1px groove #888
     padding: 0
@@ -389,6 +394,7 @@ section
 
 
     a.title
+      @extend .not-round
       color: rgb(69, 168, 255)
       width: 135px
       font-weight: bold
@@ -399,9 +405,6 @@ section
       vertical-align: middle
       text-align: center
       border-right: 2px solid rgba(0,0,0, 0.7)
-      border-radius: 0
-      -moz-border-radius: 0
-      -webkit-border-radius: 0
 
 
 
@@ -458,7 +461,6 @@ section
 
 
 //--------about-----------------------------------------------------------
-
 #about
   background: rgb(246, 246, 246)
 
@@ -538,12 +540,10 @@ section
     margin: 5px auto 10px
 
   #player, #lesson_header
+    @extend .not-round
     position: relative
     width: 100%
     background: #444
-    border-radius: 0
-    -moz-border-radius: 0
-    -webkit-border-radius: 0
 
     div
       float: left
@@ -646,8 +646,8 @@ section
         width: 150px
 
 
-      div
-        visibility: hidden
+      div.description
+        display: none
         background: rgba(0, 0, 0, 0.7)
         height: 100px
         width: 150px
@@ -655,7 +655,6 @@ section
         top: 10px
         left: 0
         border: 1px solid #888
-
 
         p
           font-size: 11px
@@ -711,36 +710,35 @@ section
 
     li
       display: inline-block
+      text-align: center
 
       a, a:visited, a:active
         display: block
         background: #ddd
-        padding: 2px 5px
+        padding: 8px 5px 4px
         width: 120px
         margin: auto 0
         height: 25px
-        text-align: center
         border-bottom-right-radius: 0
         border-bottom-left-radius: 0
         -webkit-border-bottom-left-radius: 0
         -webkit-border-bottom-right-radius: 0
-        -webkit-transition: width 1.2s ease-out
-        -moz-transition: width 1.2s ease-out
-        -o-transition: width 1.2s ease-out
-        transition: width 1.2s ease-out
+        @include trans(width, 1.2s)
+
 
       a:hover, a:focus, a.current
-        background: #b3b3b3
+        background: #555
+        color: #ffc600
         border: none
         outline: 0
 
       a.current
         width: 228px
         font-weight: bold
-        background-image: linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
-        background-image: -o-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
-        background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
-        background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
+        background-image: linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
+        background-image: -o-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
+        background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
+        background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
         background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
 
 
@@ -822,12 +820,22 @@ section
     -webkit-box-shadow: 0 0 5px#888
     box-shadow: 0 0 5px #888
     border: 0
+    font-family: Traditional Arabic, Traditional Arabic, Simplified Arabic, Verdana, Tahoma
+    font-size: 16pt
+    font-style: normal
+    line-height: normal
+    font-weight: normal
+    font-variant: normal
+    color: rgb(0, 0, 0)
 
 
     td
       padding: 2px 10px
       text-align: center
       border-right: 1px solid #bbb
+
+      span
+        color: #176200
 
 
 
@@ -856,11 +864,10 @@ section
     margin: 0
 
     li
+      @extend .not-round
       padding: 0
       margin: 0
-      border-radius: 0
-      -moz-border-radius: 0
-      -webkit-border-radius: 0
+
 
 
   #summaries
@@ -873,12 +880,11 @@ section
       padding: 10px 10px 0
 
       h2
+        @extend .not-round
         padding: 10px 0 2px 10px
         margin: 0
         border-bottom: 1px solid rgba(0,0,0,0.2)
-        border-radius: 0
-        -moz-border-radius: 0
-        -webkit-border-radius: 0
+
 
       div
         position: relative
@@ -889,6 +895,7 @@ section
           padding-right: 40px
 
         a.switch
+          @extend .not-round
           opacity: 0
           width: 38px
           position: absolute
@@ -897,22 +904,9 @@ section
           bottom: 0
           background: rgba(0,0,0,0.2) url("../img/details.png") center center no-repeat
           height: 100%
-          border-radius: 0
-          -moz-border-radius: 0
-          -webkit-border-radius: 0
-          transition: opacity 0.7s ease-in-out
-          -moz-transition: opacity 0.7s ease-in-out
-          -webkit-transition: opacity 0.7s ease-in-out
           padding: 0 auto
+          @include trans(opacity, 1s)
 
-          //div
-            color: #ffc600
-            font-family: 'Arial Black', Gadget, sans-serif
-            text-transform: uppercase
-            text-align: center
-            -webkit-transform: rotate(90deg)
-            -moz-transform: rotate(90deg)
-            transform:  rotate(90deg)
 
 
     li:hover
@@ -928,13 +922,12 @@ section
       position: relative
 
       h2
+        @extend .not-round
         padding: 10px 10px 2px 10px
         margin: 0
         margin-right: 10px
         border-bottom: 1px solid rgba(0,0,0,0.2)
-        border-radius: 0
-        -moz-border-radius: 0
-        -webkit-border-radius: 0
+
 
       div
         span
@@ -945,6 +938,7 @@ section
           padding: 10px 30px 10px 10px
 
       a.switch
+        @extend .not-round
         opacity: 0
         width: 38px
         position: absolute
@@ -953,12 +947,7 @@ section
         bottom: 0
         background: rgba(0,0,0,0.2) url("../img/return.png") top center no-repeat
         height: 100%
-        border-radius: 0
-        -moz-border-radius: 0
-        -webkit-border-radius: 0
-        transition: opacity 0.7s ease-in-out
-        -moz-transition: opacity 0.7s ease-in-out
-        -webkit-transition: opacity 0.7s ease-in-out
+        @include trans(opacity, 0.7s)
 
 
     >li:hover
@@ -966,9 +955,7 @@ section
         opacity: 0.9
 
     h3
-      border-radius: 0
-      -moz-border-radius: 0
-      -webkit-border-radius: 0
+      @extend .not-round
       border-bottom: 1px solid #fff
       margin: 50px 0 0 0
       padding-bottom: 5px
@@ -1005,9 +992,7 @@ section
 
 #QandA
   div
-    border-radius: 0
-    -moz-border-radius: 0
-    -webkit-border-radius: 0
+    @extend .not-round
     padding: 0
 
   .QAbody
@@ -1054,6 +1039,36 @@ section
 
 
 
+//----------Lesson Content - Discussion Tab-----------------------------------------------
+#Discussion
+
+  p
+    padding-bottom: 15px
+
+  div.post-body
+    @extend .not-round
+    padding: 20px 30px 0
+    border-bottom: 1px solid #eee
+
+    span.id
+      font-weight: bold
+
+    div.reply
+      @extend .not-round
+      background: rgba(0,0,0,0.1) url(../img/reply.png) top left no-repeat
+      padding-top: 15px
+      padding-left: 50px
+      border-top: 1px solid #eee
+
+  div.post-body:nth-child(even)
+    background: rgba(0,0,0,0.1)
+
+
+
+//----------Lesson Content - Discussion Tab-----------------------------------------------
+
+
+
 
 //----------QA and Discussions-----------------------------------------------
 
@@ -1095,20 +1110,14 @@ section#QD, section#suggestions
     padding: 0
 
     li
-      border-radius: 0
-      -moz-border-radius: 0
-      -webkit-border-radius: 0
+      @extend .not-round
       padding: 10px
-      //line-height: 1
       height: 80px
       overflow: hidden
       margin: 2px
       background: #f7f7f7
       border-bottom: 1px groove #888
-      -webkit-transition: background 0.8s ease-out
-      -moz-transition: background 0.8s ease-out
-      -o-transition: background 0.8s ease-out
-      transition: background 0.8s ease-out
+      @include trans(background, 0.8s)
 
       a
         text-decoration: none
@@ -1121,13 +1130,11 @@ section#QD, section#suggestions
         margin-bottom: 15px
 
       a.profile
+        @extend .not-round
         width: 20%
         text-align: center
         font-weight: bold
         border-right: 2px dashed #67bbff
-        border-radius: 0
-        -moz-border-radius: 0
-        -webkit-border-radius: 0
         font-size: 0.7em
 
 
@@ -1272,16 +1279,13 @@ section#QD, section#suggestions
           position: relative
 
           p
-            //width: 100px
+            @extend .not-round
             height: 20px
             display: block
             position: absolute
             top: 0
             right: 0
             padding: 5px
-            border-radius: 0
-            -moz-border-radius: 0
-            -webkit-border-radius: 0
             border-top-right-radius: 5px
             -moz-border-top-right-radius: 5px
             -webkit-border-top-right-radius: 5px
@@ -1294,13 +1298,12 @@ section#QD, section#suggestions
             margin-top: 0
 
         >a
+          @extend .not-round
           display: block
           font-weight: normal
           text-align: center
           border-top-left-radius: 0
           border-top-right-radius: 0
-          -moz-border-radius: 0
-          -webkit-border-radius: 0
           background: rgba(153, 192, 0, 0.50)
 
         >a:hover
@@ -1328,6 +1331,7 @@ section#QD, section#suggestions
       background: #cfcfcf
       cursor: hand
       cursor: pointer
+      @include trans(background, 0.8s)
 
       //border: 1px dashed #444
 
@@ -1361,13 +1365,11 @@ form#suggest-something
     margin: 0
 
   h2
+    @extend .not-round
     width: 100%
     border-bottom: 1px solid #ccc
     margin: 5px 0 10px
     padding-left: 10px
-    border-radius: 0
-    -moz-border-radius: 0
-    -webkit-border-radius: 0
     color: #67bbff
 
   input, textarea

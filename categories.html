@@ -148,7 +148,7 @@
     <a class="category" >cat 4</a>
     <a class="category" >cat 5</a>
     <a class="category" >cat 6</a>
-    <a class="category" >cat 7</a>
+    <a class="category current-cat" >cat 7</a>
     <a class="category" >cat 8</a>
     <a class="category" >cat 9</a>
     <a class="category" >cat 10</a>
@@ -157,7 +157,7 @@
 <div id="row4">
     <a class="sub_category" >sub 1</a>
     <a class="sub_category" >sub 2</a>
-    <a class="sub_category" >sub 3</a>
+    <a class="sub_category current-sub" >sub 3</a>
     <a class="sub_category" >sub 4</a>
     <a class="sub_category" >sub 5</a>
     <a class="sub_category" >sub 6</a>
@@ -601,12 +601,15 @@
 
     //----------------------------------show and hide lesson details on hover----------------------------------
     $(document).ready(function () {
-        $('#lessons ul li').bind("mouseover", function () {
-            $(this).find('div.description').css("visibility", "visible");
+
+        $('#lessons ul li').bind("mouseenter", function () {
+            $(this).find('div.description').fadeIn();
+            return
         });
 
-        $('#lessons ul li').bind("mouseout", function () {
-            $(this).find('div.description').css("visibility", "hidden");
+        $('#lessons ul li').bind("mouseleave", function () {
+            $(this).find('div.description').fadeOut();
+            return
         });
 
     });
