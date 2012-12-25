@@ -16,6 +16,12 @@ body
   transition: $what $duration ease-out
 
 
+@mixin round($corner, $size)
+  border-#{$corner}-radius: $size
+  -moz-border-#{$corner}-radius: $size
+  -webkit-border-#{$corner}-radius: $size
+
+
 .hidden
   display: none
 
@@ -31,7 +37,6 @@ body
   margin-left: auto
   position: relative
   display: table
-  //overflow: hidden
 
 footer
   display: table-row
@@ -71,10 +76,13 @@ a, a:visited
   background: #c9ef00
 
 form
+
   input, textarea
     border: 2px solid #ccc
     padding: 1px
     background: #fff
+    @include trans(background, 0.5s)
+
 
   input:active, input:hover, input:focus, textarea:active, textarea:hover, textarea:focus
     background: rgb(234, 255, 187)
@@ -84,7 +92,7 @@ form
 .active, .current-cat, .current-sub
   background: #67bbff !important
 
-a.vote-up, a.vote-down
+a.vote-up, a.vote-down, a.reply-button
   display: inline-block
   float: right
   margin: 5px 0 0 0
@@ -99,16 +107,19 @@ a.vote-up, a.vote-down
 
 a.vote-up
   background: url("../img/vote.png") 0px 0px
-
-a.vote-up:hover
-  background: url("../img/vote.png")-20px 0px
+  &:hover
+    background: url("../img/vote.png")-20px 0px
 
 a.vote-down
   background: url("../img/vote.png") 0px -20px
+  &:hover
+    background: url("../img/vote.png") -20px -20px
 
-a.vote-down:hover
-  background: url("../img/vote.png") -20px -20px
-
+a.reply-button
+  background: url("../img/vote.png") 0px -40px
+  margin-right: 5px
+  &:hover
+    background: url("../img/vote.png") -20px -40px
 
 
 
@@ -129,15 +140,11 @@ a.vote-down:hover
 
 
 #row1
+  @include round(bottom-right, 0)
+  @include round(bottom-left, 0)
   font-size: .9em
   display: table
   width: $wrapper-width
-  border-bottom-right-radius: 0
-  border-bottom-left-radius: 0
-  -moz-border-bottom-right-radius: 0
-  -moz-border-bottom-left-radius: 0
-  -webkit-border-bottom-left-radius: 0
-  -webkit-border-bottom-right-radius: 0
   margin: 0 auto
   position: relative
 
@@ -150,9 +157,7 @@ a.vote-down:hover
     vertical-align: middle
     margin-left: auto
     margin-right: auto
-    border-bottom-right-radius: 5px
-    -moz-border-bottom-right-radius: 5px
-    -webkit-border-bottom-right-radius: 5px
+    @include round(bottom-right, 5px)
 
   #logo
     @extend .not-round
@@ -436,7 +441,7 @@ section
       width: 28px
       height: 28px
       padding: 0
-      border-radius: 5px
+
 
     a.rss:hover
       opacity: 1
@@ -537,7 +542,7 @@ section
 
   #lesson_header
     display: table
-    margin: 5px auto 10px
+    margin: 0 auto 10px
 
   #player, #lesson_header
     @extend .not-round
@@ -719,10 +724,8 @@ section
         width: 120px
         margin: auto 0
         height: 25px
-        border-bottom-right-radius: 0
-        border-bottom-left-radius: 0
-        -webkit-border-bottom-left-radius: 0
-        -webkit-border-bottom-right-radius: 0
+        @include round(bottom-right, 0)
+        @include round(bottom-left, 0)
         @include trans(width, 1.2s)
 
 
@@ -748,10 +751,8 @@ section
     margin-top: 0
     background: #b3b3b3
     padding: 0
-    border-top-right-radius: 0
-    border-top-left-radius: 0
-    -webkit-border-top-left-radius: 0
-    -webkit-border-top-right-radius: 0
+    @include round(top-right, 0)
+    @include round(top-left, 0)
 
     >div
       display: none
@@ -836,12 +837,6 @@ section
 
       span
         color: #176200
-
-
-
-
-
-
 
 //----------Lesson Content - Script Tab-----------------------------------------------
 
@@ -983,9 +978,12 @@ section
   top: 0
   left: 950px
 
-
-
 //----------Lesson Content - Microblog Tab-----------------------------------------------
+
+
+
+
+
 
 
 //----------Lesson Content - Q-and-A Tab-----------------------------------------------
@@ -1015,7 +1013,7 @@ section
     .answer
       margin-left: 10px
       padding: 18px 20px 20px 50px
-      background: url("../img/reply.png") top left no-repeat
+      background: url("../img/reply1.png") top left no-repeat
       text-align: justify
 
 
@@ -1028,14 +1026,16 @@ section
     background: #666
     color: #fff
     border: none
-    border-top-right-radius: 0
-    border-top-left-radius: 0
-    -webkit-border-top-left-radius: 0
-    -webkit-border-top-right-radius: 0
+    @include round(top-right, 0)
+    @include round(top-left, 0)
 
 
 
 //----------Lesson Content - Q-and-A Tab-----------------------------------------------
+
+
+
+
 
 
 
@@ -1055,7 +1055,7 @@ section
 
     div.reply
       @extend .not-round
-      background: rgba(0,0,0,0.1) url(../img/reply.png) top left no-repeat
+      background: rgba(0,0,0,0) url(../img/reply1.png) top left no-repeat
       padding-top: 15px
       padding-left: 50px
       border-top: 1px solid #eee
@@ -1063,9 +1063,48 @@ section
   div.post-body:nth-child(even)
     background: rgba(0,0,0,0.1)
 
-
-
 //----------Lesson Content - Discussion Tab-----------------------------------------------
+
+
+
+
+
+
+
+
+//----------Lesson Content - Presentation Tab-----------------------------------------------
+#Presentation
+  p
+    padding: 10px 0
+    margin-top: 0
+
+  div#lesson-video
+    padding: 30px 0
+
+    video
+      display: block
+      margin: 0 auto
+
+//----------Lesson Content - Presentation Tab-----------------------------------------------
+
+
+
+
+
+
+//----------Lesson Content - References Tab-----------------------------------------------
+
+//----------Lesson Content - Presentation Tab-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1093,7 +1132,6 @@ section#QD, section#suggestions
     margin: 0 5px
 
 #suggest
-  //background: #595959
   width: 49.4%
 
 #Questions, #topics
@@ -1151,32 +1189,14 @@ section#QD, section#suggestions
 
 
     li:last-of-type
-      margin-bottom: -5px
-      border-bottom-left-radius: 5px
-      -moz-border-bottom-left-radius: 5px
-      -webkit-border-bottom-left-radius: 5px
-      border-bottom-right-radius: 5px
-      -moz-border-bottom-right-radius: 5px
-      -webkit-border-bottom-right-radius: 5px
+      @include round(bottom-left, 5px)
+      @include round(bottom-right, 5px)
       border-bottom: none
+      margin-bottom: -5px
 
     li:hover
       background: #dfdfdf
-      //-moz-box-shadow: inset 0 0 5px #555
-      //-webkit-box-shadow: inset 0 0 5px#555
-      //box-shadow: inset 0 0 5px #555
 
-    //li:nth-child(odd)
-      background: #f7f7f7
-
-    //li:nth-child(odd):hover
-      background: #f6f6f6
-
-    //li:nth-child(even)
-      background: #dfdfdf
-
-    //li:nth-child(even):hover
-      background: #b7b7b7
 
 
 
@@ -1200,22 +1220,18 @@ section#QD, section#suggestions
     margin: auto 0 10px !important
     padding:  0
 
+
     li
+      @include round(top-right, 0)
+      @include round(bottom-right, 0)
       width: 155px
       background: #dcdcdc
       color: #666
-      //outline: 0
       text-decoration: none
       padding: 5px
       margin: 7px 0 5px 25px
       text-align: center
       position: relative
-      border-top-right-radius: 0
-      -moz-border-top-right-radius: 0
-      -webkit-border-top-right-radius: 0
-      border-bottom-right-radius: 0
-      -moz-border-bottom-right-radius: 0
-      -webkit-border-bottom-right-radius: 0
       cursor: pointer
       cursor: hand
 
@@ -1243,14 +1259,10 @@ section#QD, section#suggestions
   .tab-content
     background: #bbb
     margin: 15px 10px 20px 190px
-    //min-height: 400px
     position: relative
     z-index: 9
     padding: 10px 10px 5px 20px
     border: 1px solid #777
-    //border-top-left-radius: 0
-    //-moz-border-top-left-radius: 0
-    //-webkit-border-top-left-radius: 0
 
     ul.sub
       padding: 0px
@@ -1280,18 +1292,14 @@ section#QD, section#suggestions
 
           p
             @extend .not-round
+            @include round(top-right, 5px)
+            @include round(bottom-right, 5px)
             height: 20px
             display: block
             position: absolute
             top: 0
             right: 0
             padding: 5px
-            border-top-right-radius: 5px
-            -moz-border-top-right-radius: 5px
-            -webkit-border-top-right-radius: 5px
-            border-bottom-right-radius: 5px
-            -moz-border-bottom-right-radius: 5px
-            -webkit-border-bottom-right-radius: 5px
             text-align: center
             background: rgba(0,0,0,.5)
 
@@ -1302,8 +1310,8 @@ section#QD, section#suggestions
           display: block
           font-weight: normal
           text-align: center
-          border-top-left-radius: 0
-          border-top-right-radius: 0
+          @include round(top-right, 0)
+          @include round(top-left, 0)
           background: rgba(153, 192, 0, 0.50)
 
         >a:hover
@@ -1333,7 +1341,6 @@ section#QD, section#suggestions
       cursor: pointer
       @include trans(background, 0.8s)
 
-      //border: 1px dashed #444
 
       a
         display: inline-block
@@ -1341,13 +1348,11 @@ section#QD, section#suggestions
         vertical-align: middle
         width: 20px
         height: 20px
-        //border: 1px dashed #ddd
         display: none
 
     li:hover
       background: rgb(140, 140, 140)
       color: #efefef
-      //border: 1px dashed #000
 
       a
         display: inline-block

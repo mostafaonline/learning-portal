@@ -64,7 +64,11 @@ a, a:visited {
 form input, form textarea {
   border: 2px solid #cccccc;
   padding: 1px;
-  background: white; }
+  background: white;
+  -webkit-transition: background 0.5s ease-out;
+  -moz-transition: background 0.5s ease-out;
+  -o-transition: background 0.5s ease-out;
+  transition: background 0.5s ease-out; }
 form input:active, form input:hover, form input:focus, form textarea:active, form textarea:hover, form textarea:focus {
   background: #eaffbb;
   border-color: #888888;
@@ -73,7 +77,7 @@ form input:active, form input:hover, form input:focus, form textarea:active, for
 .active, .current-cat, .current-sub {
   background: #67bbff !important; }
 
-a.vote-up, a.vote-down {
+a.vote-up, a.vote-down, a.reply-button {
   display: inline-block;
   float: right;
   margin: 5px 0 0 0;
@@ -88,15 +92,19 @@ a.vote-up, a.vote-down {
 
 a.vote-up {
   background: url("../img/vote.png") 0px 0px; }
-
-a.vote-up:hover {
-  background: url("../img/vote.png") -20px 0px; }
+  a.vote-up:hover {
+    background: url("../img/vote.png") -20px 0px; }
 
 a.vote-down {
   background: url("../img/vote.png") 0px -20px; }
+  a.vote-down:hover {
+    background: url("../img/vote.png") -20px -20px; }
 
-a.vote-down:hover {
-  background: url("../img/vote.png") -20px -20px; }
+a.reply-button {
+  background: url("../img/vote.png") 0px -40px;
+  margin-right: 5px; }
+  a.reply-button:hover {
+    background: url("../img/vote.png") -20px -40px; }
 
 #row0 {
   background: url("../img/hr.png");
@@ -109,15 +117,15 @@ a.vote-down:hover {
     margin-right: auto; }
 
 #row1 {
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
   font-size: 0.9em;
   display: table;
   width: 960px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-bottom-right-radius: 0;
-  -moz-border-bottom-left-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
   margin: 0 auto;
   position: relative; }
   #row1 #title {
@@ -322,8 +330,7 @@ section {
       opacity: 0.7;
       width: 28px;
       height: 28px;
-      padding: 0;
-      border-radius: 5px; }
+      padding: 0; }
     section header a.rss:hover {
       opacity: 1; }
 
@@ -387,7 +394,7 @@ section {
   margin: 20px auto 10px; }
 #lessons #lesson_header {
   display: table;
-  margin: 5px auto 10px; }
+  margin: 0 auto 10px; }
 #lessons #player, #lessons #lesson_header {
   position: relative;
   width: 100%;
@@ -526,9 +533,11 @@ section {
         margin: auto 0;
         height: 25px;
         border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        -webkit-border-bottom-left-radius: 0;
+        -moz-border-bottom-right-radius: 0;
         -webkit-border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        -moz-border-bottom-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
         -webkit-transition: width 1.2s ease-out;
         -moz-transition: width 1.2s ease-out;
         -o-transition: width 1.2s ease-out;
@@ -551,9 +560,11 @@ section {
     background: #b3b3b3;
     padding: 0;
     border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
     border-top-left-radius: 0;
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-top-right-radius: 0; }
+    -moz-border-top-left-radius: 0;
+    -webkit-border-top-left-radius: 0; }
     #Lesson_Content div#Tab_Content > div {
       display: none;
       margin: 0 auto;
@@ -718,7 +729,7 @@ section {
   #QandA .QAbody .answer {
     margin-left: 10px;
     padding: 18px 20px 20px 50px;
-    background: url("../img/reply.png") top left no-repeat;
+    background: url("../img/reply1.png") top left no-repeat;
     text-align: justify; }
 #QandA a.more {
   display: block;
@@ -729,9 +740,11 @@ section {
   color: white;
   border: none;
   border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
   border-top-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0; }
+  -moz-border-top-left-radius: 0;
+  -webkit-border-top-left-radius: 0; }
 
 #Discussion p {
   padding-bottom: 15px; }
@@ -741,12 +754,21 @@ section {
   #Discussion div.post-body span.id {
     font-weight: bold; }
   #Discussion div.post-body div.reply {
-    background: rgba(0, 0, 0, 0.1) url(../img/reply.png) top left no-repeat;
+    background: rgba(0, 0, 0, 0) url(../img/reply1.png) top left no-repeat;
     padding-top: 15px;
     padding-left: 50px;
     border-top: 1px solid #eeeeee; }
 #Discussion div.post-body:nth-child(even) {
   background: rgba(0, 0, 0, 0.1); }
+
+#Presentation p {
+  padding: 10px 0;
+  margin-top: 0; }
+#Presentation div#lesson-video {
+  padding: 30px 0; }
+  #Presentation div#lesson-video video {
+    display: block;
+    margin: 0 auto; }
 
 section#QD, section#suggestions {
   background: transparent;
@@ -813,14 +835,14 @@ section#QD, section#suggestions {
   #Questions ul li:first-of-type, #Discussions ul li:first-of-type {
     margin-top: -15px; }
   #Questions ul li:last-of-type, #Discussions ul li:last-of-type {
-    margin-bottom: -5px;
     border-bottom-left-radius: 5px;
     -moz-border-bottom-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     -moz-border-bottom-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
-    border-bottom: none; }
+    border-bottom: none;
+    margin-bottom: -5px; }
   #Questions ul li:hover, #Discussions ul li:hover {
     background: #dfdfdf; }
 
@@ -835,6 +857,12 @@ section#QD, section#suggestions {
   margin: auto 0 10px !important;
   padding: 0; }
   #categories ul#tabs li {
+    border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-bottom-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
     width: 155px;
     background: gainsboro;
     color: #666666;
@@ -843,12 +871,6 @@ section#QD, section#suggestions {
     margin: 7px 0 5px 25px;
     text-align: center;
     position: relative;
-    border-top-right-radius: 0;
-    -moz-border-top-right-radius: 0;
-    -webkit-border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    -moz-border-bottom-right-radius: 0;
-    -webkit-border-bottom-right-radius: 0;
     cursor: pointer;
     cursor: hand; }
     #categories ul#tabs li a {
@@ -898,18 +920,18 @@ section#QD, section#suggestions {
         color: #faffc5;
         position: relative; }
         #categories .tab-content ul.sub > li h3 p {
-          height: 20px;
-          display: block;
-          position: absolute;
-          top: 0;
-          right: 0;
-          padding: 5px;
           border-top-right-radius: 5px;
           -moz-border-top-right-radius: 5px;
           -webkit-border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
           -moz-border-bottom-right-radius: 5px;
           -webkit-border-bottom-right-radius: 5px;
+          height: 20px;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
           text-align: center;
           background: rgba(0, 0, 0, 0.5);
           margin-top: 0; }
@@ -917,8 +939,12 @@ section#QD, section#suggestions {
         display: block;
         font-weight: normal;
         text-align: center;
-        border-top-left-radius: 0;
         border-top-right-radius: 0;
+        -moz-border-top-right-radius: 0;
+        -webkit-border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        -moz-border-top-left-radius: 0;
+        -webkit-border-top-left-radius: 0;
         background: rgba(153, 192, 0, 0.5); }
       #categories .tab-content ul.sub > li > a:hover {
         background: #99c000; }
