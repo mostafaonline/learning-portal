@@ -1,14 +1,5 @@
 $wrapper-width: 960px
 
-*
-  border-radius: 5px
-  -moz-border-radius: 5px
-  -webkit-border-radius: 5px
-
-body
-  background: rgb(232, 232, 232)
-  font-family: Segoe UI, Calibri
-
 @mixin trans($what, $duration)
   -webkit-transition: $what $duration ease-out
   -moz-transition:  $what $duration ease-out
@@ -22,13 +13,25 @@ body
   -webkit-border-#{$corner}-radius: $size
 
 
-.hidden
-  display: none
-
 .not-round
   border-radius: 0
   -moz-border-radius: 0
   -webkit-border-radius: 0
+
+
+div, section, button, a, li, h1, h2, h3, h4, h5, h6, input, textarea, video, audio, span, table
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+
+
+body
+  background: rgb(232, 232, 232)
+  font-family: Segoe UI, Calibri
+
+
+.hidden
+  display: none
 
 
 #wrapper, section
@@ -46,8 +49,7 @@ footer
   @extend .not-round
   background: rgb(68, 68, 68)
   padding-bottom: 0
-  position: fixed
-  z-index: 9999
+  //position: fixed
   width: 100%
   -moz-box-shadow: 0 0 10px #444
   -webkit-box-shadow: 0 0 10px #444
@@ -140,8 +142,6 @@ a.reply-button
 
 
 #row1
-  @include round(bottom-right, 0)
-  @include round(bottom-left, 0)
   font-size: .9em
   display: table
   width: $wrapper-width
@@ -157,7 +157,6 @@ a.reply-button
     vertical-align: middle
     margin-left: auto
     margin-right: auto
-    @include round(bottom-right, 5px)
 
   #logo
     @extend .not-round
@@ -165,7 +164,7 @@ a.reply-button
     width: 120px
     height: 100px
     padding-right: 20px
-    background: url("../img/logo.png") no-repeat top
+    background: url("../img/logo3.png") no-repeat top
 
 
 
@@ -208,6 +207,7 @@ a.reply-button
       border: 1px groove #efefef
       padding: 15px
       display: none
+      z-index: 11
 
       .triangle
         background: url("../img/triangle.png") center center no-repeat
@@ -291,8 +291,11 @@ a.reply-button
   @extend .not-round
   width: 100%
   background: #fcfcfc
-  padding: 5px 0
-  margin-bottom: 2px
+  padding: 0
+  position: fixed
+  z-index: 9999
+  margin: 0
+
 
   #wrap
     font-size: .9em
@@ -345,7 +348,6 @@ a.reply-button
     display: inline-block
     background: #747474
     padding: 2px 10px
-    width: 70px
     text-align: center
     border: 1px #444 solid
 
@@ -420,7 +422,7 @@ section
 
     a.latest
       background: rgba(179, 217, 0, 0.5)
-      //width: 50px
+    //width: 50px
 
     a.latest:hover
       background: rgba(179, 217, 0, 1)
@@ -429,7 +431,7 @@ section
 
     a.hottest
       background: rgba(255, 198, 0, 0.5)
-      //width: 70px
+    //width: 70px
 
     a.hottest:hover
       background: rgba(255, 198, 0, 1)
@@ -447,13 +449,15 @@ section
       opacity: 1
 
 #dummy
-  background: transparent
-  height: 160px
-  margin-bottom: 35px
+  visibility: hidden
+  height: 33px
+  margin: 0
 
-#dummy2
+
+
+#dummy-end
   background: transparent
-  height: 360px
+  height: 510px
   margin-bottom: 35px
 
 
@@ -518,10 +522,12 @@ section
       margin: 5px auto 10px
       padding: 0 10px 10px
 
+
     ul#tag_bar
       list-style-type: none
-      padding: 0
+      padding: 10px 0
       margin: 5px auto 10px
+
 
       li
         display: inline-block
@@ -532,6 +538,11 @@ section
           background: #ddd
           width: 60px
           text-align: center
+          transform: rotate(15deg)
+          -ms-transform: rotate(15deg) /* IE 9 */
+          -webkit-transform: rotate(15deg) /* Safari and Chrome */
+          -o-transform: rotate(15deg) /* Opera */
+          -moz-transform: rotate(15deg) /* Firefox */
 
         a:hover
           background: #b3b3b3
@@ -619,8 +630,8 @@ section
             height: 40px
             border: none
 
-        
-       
+
+
 
 
 
@@ -719,31 +730,31 @@ section
 
       a, a:visited, a:active
         display: block
-        background: #ddd
-        padding: 8px 5px 4px
+        background: #aaa
+        padding: 1px 5px 4px
         width: 120px
         margin: auto 0
-        height: 25px
+        height: 20px
         @include round(bottom-right, 0)
         @include round(bottom-left, 0)
-        @include trans(width, 1.2s)
+        @include trans(width, 1s)
 
 
       a:hover, a:focus, a.current
-        background: #555
+        background: #666
         color: #ffc600
         border: none
         outline: 0
 
+
       a.current
         width: 228px
         font-weight: bold
-        background-image: linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
-        background-image: -o-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
-        background-image: -moz-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
-        background-image: -webkit-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(0, 0, 0) 90%)
-        background-image: -ms-linear-gradient(bottom, rgb(179,179,179) 0%, rgb(116, 116, 116) 90%)
-
+        background: #444
+        font-size: 18px
+        height: 23px
+        padding-top: 5px
+        text-decoration: underline
 
 
 
@@ -751,8 +762,9 @@ section
     margin-top: 0
     background: #b3b3b3
     padding: 0
-    @include round(top-right, 0)
-    @include round(top-left, 0)
+    border-top: 15px solid #444
+    border-bottom: 15px solid #666
+
 
     >div
       display: none
@@ -791,16 +803,24 @@ section
     border: 0
 
     tr.titles
-      background: #888
       color: #f0f0f0
       font-weight: bold
 
       td
         padding: 5px 0 5px 20px
+        background: #666
+
+    tr:first-of-type td:first-child
+      @include round(top-left, 5px)
+      border-right: 2px solid #f0f0f0
+
+    tr:first-of-type td:last-child
+      @include round(top-right, 5px)
+
 
     td#objectives
-      border-right: 1px solid #888
-      width: 610px
+      border-right: 2px solid #888
+      width: 580px
 
     ul
       list-style-type: circle
@@ -1244,7 +1264,6 @@ section#QD, section#suggestions
 
     li.current
       z-index: 10
-      border-right: none
       background: #bbb
       font-weight: bold
       border: 1px solid #777
@@ -1386,6 +1405,9 @@ form#suggest-something
 
   textarea
     height: 70px
+    -moz-resize: none
+    -webkit-resize: none
+    resize: none
 
   button
     margin-top: 5px

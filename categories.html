@@ -45,9 +45,30 @@
 <!-- Main Content Begins Here -->
 
 <hgroup id="site-header">
-    <div id="row0">
-        <div id="towhid"></div>
+
+    <div id="row2">
+        <div id="wrap">
+            <nav id="menu">
+
+                <a class="nav" href="index.html" title="lessons">Home</a>
+                <a class="nav active" href="#lessons" title="categories">Lessons</a>
+                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
+                <a class="nav" href="index.html#about" title="about">about</a>
+
+            </nav>
+
+
+            <form id="search">
+                <input type="text" align="left" placeholder="Search..."/>
+                <button class="btn" type="submit" align="center">Website</button>
+                <button class="btn" type="submit" align="center">Glossary</button>
+
+            </form>
+        </div>
     </div>
+
+    <section id="dummy"></section>
+
     <div id="row1">
 
         <h1 id="title">
@@ -112,34 +133,15 @@
         </div>
     </div>
 
-
-    <div id="row2">
-        <div id="wrap">
-            <nav id="menu">
-
-                <a class="nav" href="index.html" title="lessons">Home</a>
-                <a class="nav active" href="#lessons" title="categories">Lessons</a>
-                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
-                <a class="nav" href="index.html#about" title="about">about</a>
-
-            </nav>
-
-
-            <form id="search">
-                <input type="text" align="left" placeholder="Search..."/>
-                <button class="btn" type="submit" align="center">Website</button>
-                <button class="btn" type="submit" align="center">Glossary</button>
-
-            </form>
-        </div>
+    <div id="row0">
+        <div id="towhid"></div>
     </div>
+
 
 
 
 </hgroup>
 <div id="wrapper">
-
-<section id="dummy"></section>
 
 <div id="row3">
     <a class="category" >cat 1</a>
@@ -494,7 +496,7 @@
             &copy; Copyright by Islamic International Foundation of Cooperation :: IslamIFC
         </p>
     </section>
-    <div id="dummy2"></div>
+    <div id="dummy-end"></div>
 </footer>
 </div>
 
@@ -523,6 +525,19 @@
                 $(this).addClass('active');
 
             }
+
+            //---------------------------------------------set border bottom to fixed bar on scroll-----------------------------
+
+            if (top > 150) {
+
+                $('#row2').css("border-bottom", "2px solid #666");
+
+            }
+            else {
+                $('#row2').css("border-bottom", "none");
+
+            }
+
         });
     });
     //---------------------------------------------set menu items active on scroll-to-----------------------------

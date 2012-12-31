@@ -45,9 +45,31 @@
 <!-- Main Content Begins Here -->
 
 <hgroup id="site-header">
-    <div id="row0">
-        <div id="towhid"></div>
+
+
+    <div id="row2">
+        <div id="wrap">
+            <nav id="menu">
+
+                <a class="nav" href="index.html" title="lessons">Home</a>
+                <a class="nav active" href="#lessons" title="categories">Lessons</a>
+                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
+                <a class="nav" href="index.html#about" title="about">about</a>
+
+            </nav>
+
+
+            <form id="search">
+                <input type="text" align="left" placeholder="Search..."/>
+                <button class="btn" type="submit" align="center">Website</button>
+                <button class="btn" type="submit" align="center">Glossary</button>
+
+            </form>
+        </div>
     </div>
+
+    <section id="dummy"></section>
+
     <div id="row1">
 
         <h1 id="title">
@@ -113,37 +135,21 @@
     </div>
 
 
-    <div id="row2">
-        <div id="wrap">
-            <nav id="menu">
-
-                <a class="nav" href="index.html" title="lessons">Home</a>
-                <a class="nav active" href="#lessons" title="categories">Lessons</a>
-                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
-                <a class="nav" href="index.html#about" title="about">about</a>
-
-            </nav>
-
-
-            <form id="search">
-                <input type="text" align="left" placeholder="Search..."/>
-                <button class="btn" type="submit" align="center">Website</button>
-                <button class="btn" type="submit" align="center">Glossary</button>
-
-            </form>
-        </div>
+    <div id="row0">
+        <div id="towhid"></div>
     </div>
+
 
 
 
 </hgroup>
 <div id="wrapper">
 
-<section id="dummy"></section>
+
 
 <div id="row3">
-    <b>You are here:</b>
-    <br><br>
+    <b>Current path:</b>
+
     <a class="category" >cat 1</a>
     <a class="category active" >cat 2</a>
     <a class="category" >cat 3</a>
@@ -1068,7 +1074,7 @@
             &copy; Copyright by Islamic International Foundation of Cooperation :: IslamIFC
         </p>
     </section>
-    <div id="dummy2"></div>
+    <div id="dummy-end"></div>
 </footer>
 </div>
 
@@ -1081,6 +1087,23 @@
 <script src="js/vendor/jquery.animate-colors-min.js"></script>
 
 <script>
+
+
+    //---------------------------------------------set border bottom to fixed bar on scroll-----------------------------
+    $(document).scroll(function () {
+
+            var top = $("body").scrollTop() > 0 ? $("body").scrollTop() : $("html").scrollTop()
+            if (top > 150) {
+
+                $('#row2').css("border-bottom", "2px solid #666");
+
+            }
+            else {
+                $('#row2').css("border-bottom", "none");
+
+            }
+        });
+    //---------------------------------------------set border bottom to fixed bar on scroll-----------------------------
 
 
     //---------------------------------------------lesson content tabbed area-----------------------------

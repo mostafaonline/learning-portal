@@ -45,9 +45,29 @@
 <!-- Main Content Begins Here -->
 
 <hgroup id="site-header">
-    <div id="row0">
-        <div id="towhid"></div>
+    <div id="row2">
+        <div id="wrap">
+            <nav id="menu">
+
+                <a class="nav active" href="#lessons" title="lessons">New Stuff</a>
+                <a class="nav" href="#categories" title="categories">Categories</a>
+                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
+                <a class="nav" href="#about" title="about">about</a>
+
+            </nav>
+
+
+            <form id="search">
+                <input type="text" align="left" placeholder="Search..."/>
+                <button class="btn" type="submit" align="center">Website</button>
+                <button class="btn" type="submit" align="center">Glossary</button>
+
+            </form>
+        </div>
     </div>
+
+    <section id="dummy"></section>
+
     <div id="row1">
 
         <h1 id="title">
@@ -74,38 +94,38 @@
                 <div class="triangle"></div>
                 <form id="sign-in-form">
 
-                <input type="email" name="Email" placeholder="Email">
-                <input type="password" name="Password" placeholder="Password">
+                    <input type="email" name="Email" placeholder="Email">
+                    <input type="password" name="Password" placeholder="Password">
 
-                <button class="btn" type="submit" name="Sign in">Let me in!</button>
+                    <button class="btn" type="submit" name="Sign in">Let me in!</button>
 
-                <input type="checkbox"  name="Keep me" value="Keep me">Keep me signed in for a while!
-                <a href="">I can't remember my password!</a>
+                    <input type="checkbox"  name="Keep me" value="Keep me">Keep me signed in for a while!
+                    <a href="">I can't remember my password!</a>
 
-                <button class="btn" id="fb-login"></button>
-                <button class="btn" id="g-login"></button>
+                    <button class="btn" id="fb-login"></button>
+                    <button class="btn" id="g-login"></button>
 
-                <button name="Cancel" class="btn cancel">Cancel</button>
+                    <button name="Cancel" class="btn cancel">Cancel</button>
                 </form>
             </div>
 
             <div id="sign-up">
                 <div class="triangle"></div>
                 <form id="sign-up-form">
-                <input type="email" name="Email" placeholder="Email">
-                <input type="password" name="Password" placeholder="Password">
-                <input type="password" name="Password" placeholder="Repeat Password">
+                    <input type="email" name="Email" placeholder="Email">
+                    <input type="password" name="Password" placeholder="Password">
+                    <input type="password" name="Password" placeholder="Repeat Password">
 
 
-                <!-----------------------------captcha-------------------------------------------->
-                <img id="captcha" src="http://image.captchas.net?client=demo&random=something">
-                <a id="refresh" href="">refresh image</a>
-                <input type="text" name="captcha" placeholder="Enter the text above">
-                <!-----------------------------captcha-------------------------------------------->
+                    <!-----------------------------captcha-------------------------------------------->
+                    <img id="captcha" src="http://image.captchas.net?client=demo&random=something">
+                    <a id="refresh" href="">refresh image</a>
+                    <input type="text" name="captcha" placeholder="Enter the text above">
+                    <!-----------------------------captcha-------------------------------------------->
 
 
-                <button type="submit" name="Sign Up" class="btn joinbtn">Create my account!</button>
-                <button name="Cancel" class="btn cancel">Cancel</button>
+                    <button type="submit" name="Sign Up" class="btn joinbtn">Create my account!</button>
+                    <button name="Cancel" class="btn cancel">Cancel</button>
                 </form>
             </div>
 
@@ -113,32 +133,12 @@
     </div>
 
 
-    <div id="row2">
-        <div id="wrap">
-            <nav id="menu">
-
-                <a class="nav active" href="#lessons" title="lessons">New Stuff</a>
-                <a class="nav" href="#categories" title="categories">Categories</a>
-                <a class="nav" href="#suggestions" title="suggestions">Suggestions</a>
-                <a class="nav" href="#about" title="about">about</a>
-
-            </nav>
-
-
-            <form id="search">
-                <input type="text" align="left" placeholder="Search..."/>
-                <button class="btn" type="submit" align="center">Website</button>
-                <button class="btn" type="submit" align="center">Glossary</button>
-
-            </form>
-        </div>
+    <div id="row0">
+        <div id="towhid"></div>
     </div>
 
 </hgroup>
 <div id="wrapper">
-
-<section id="dummy">
-</section>
 
 
 <section id="lessons">
@@ -721,7 +721,7 @@
             &copy; Copyright by Islamic International Foundation of Cooperation :: IslamIFC
         </p>
     </section>
-    <div id="dummy2"></div>
+    <div id="dummy-end"></div>
 </footer>
 </div>
 
@@ -750,6 +750,19 @@
                 $(this).addClass('active');
 
             }
+
+            //---------------------------------------------set border bottom to fixed bar on scroll-----------------------------
+
+                if (top > 150) {
+
+                    $('#row2').css("border-bottom", "2px solid #666");
+
+                }
+                else {
+                    $('#row2').css("border-bottom", "none");
+
+                }
+
         });
     });
     //---------------------------------------------set menu items active on scroll-to-----------------------------
@@ -759,7 +772,7 @@
     $('a.nav').click(function () {
 
         $('html, body').animate({
-            scrollTop:$('#' + this.title).offset().top - 215
+            scrollTop:$('#' + this.title).offset().top - 60
         }, 2000);
 
         $('a.active').removeClass();
