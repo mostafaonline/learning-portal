@@ -141,6 +141,7 @@
 
 
 </hgroup>
+
 <div id="wrapper">
 
 <div id="row3">
@@ -490,6 +491,8 @@
 
 </section>
 
+</div>
+
 <footer>
     <section>
         <p>
@@ -498,8 +501,6 @@
     </section>
     <div id="dummy-end"></div>
 </footer>
-</div>
-
 <!-- Main Content Ends Here -->
 
 
@@ -544,11 +545,13 @@
 
 
     //----------------------------------smooth scrolling for navigation menu----------------------------------
-    $('a.nav').click(function () {
+    $('a.nav').click(function (ev) {
+
+        ev.preventDefault();
 
         $('html, body').animate({
             scrollTop:$('#' + this.title).offset().top -280
-        }, 2000);
+        }, 1500, 'easeOutExpo');
 
         $('a.active').removeClass();
         $(this).addClass('active');

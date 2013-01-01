@@ -30,19 +30,43 @@
     <groupTables value="false" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5140515">
+    <splitter split-orientation="horizontal" split-proportion="0.66314554">
       <split-first>
         <leaf>
-          <file leaf-file-name="lesson.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="lesson.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lesson.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="258" column="97" selection-start="8405" selection-end="8405" vertical-scroll-proportion="0.61935484">
+                <state line="1080" column="9" selection-start="75752" selection-end="75752" vertical-scroll-proportion="-17.76923">
                   <folding>
-                    <marker date="1356960950412" expanded="true" signature="1524:1776" placeholder="..." />
-                    <marker date="1356960950412" expanded="true" signature="1617:1645" placeholder="..." />
-                    <element signature="tag#div#0;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#1;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#2;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+                    <marker date="1357039971833" expanded="true" signature="1524:1776" placeholder="..." />
+                    <marker date="1357039971833" expanded="true" signature="1617:1645" placeholder="..." />
+                    <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="categories.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/categories.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="535" column="35" selection-start="17061" selection-end="17061" vertical-scroll-proportion="-1.7575758">
+                  <folding>
+                    <marker date="1357042460433" expanded="true" signature="1524:1776" placeholder="..." />
+                    <marker date="1357042460433" expanded="true" signature="1617:1645" placeholder="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="776" column="29" selection-start="22797" selection-end="22797" vertical-scroll-proportion="0.42633638">
+                  <folding>
+                    <marker date="1357042688236" expanded="true" signature="1524:1776" placeholder="..." />
+                    <marker date="1357042688236" expanded="true" signature="1617:1645" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -52,19 +76,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="screen.sass" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="screen.sass" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/screen.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1267" column="49" selection-start="22055" selection-end="22055" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/screen.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="590" column="41" selection-start="17685" selection-end="17832" vertical-scroll-proportion="0.83021224">
+                <state line="36" column="25" selection-start="756" selection-end="756" vertical-scroll-proportion="0.16978776">
                   <folding />
                 </state>
               </provider>
@@ -91,11 +106,11 @@
         <option value="$PROJECT_DIR$/lessons.html" />
         <option value="$PROJECT_DIR$/js/organictabs.jquery.js" />
         <option value="C:/123.html" />
+        <option value="$PROJECT_DIR$/css/screen.css" />
+        <option value="$PROJECT_DIR$/sass/screen.sass" />
         <option value="$PROJECT_DIR$/lesson.html" />
         <option value="$PROJECT_DIR$/categories.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/sass/screen.sass" />
-        <option value="$PROJECT_DIR$/css/screen.css" />
       </list>
     </option>
   </component>
@@ -199,11 +214,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
     <property name="last_opened_file_path" value="C:/Ruby193/bin/sass.bat" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -385,7 +400,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.089647815" sideWeight="0.9050701" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09071505" sideWeight="0.9050701" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -510,54 +525,49 @@
         <state line="22" column="12" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="82" selection-start="2250" selection-end="2250" vertical-scroll-proportion="-4.9096775">
-          <folding>
-            <marker date="1356961851116" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1356961851116" expanded="true" signature="-1:-1" placeholder="..." />
-            <element signature="tag#div#1;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="34" selection-start="2626" selection-end="2626" vertical-scroll-proportion="0.3716129">
-          <folding>
-            <marker date="1356961068296" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1356961068296" expanded="true" signature="-1:-1" placeholder="..." />
-            <element signature="tag#div#0;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1267" column="49" selection-start="22055" selection-end="22055" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="590" column="41" selection-start="17685" selection-end="17832" vertical-scroll-proportion="0.83021224">
+        <state line="590" column="41" selection-start="17685" selection-end="17832" vertical-scroll-proportion="1.1091113">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="97" selection-start="8405" selection-end="8405" vertical-scroll-proportion="0.61935484">
+        <state line="1080" column="9" selection-start="75752" selection-end="75752" vertical-scroll-proportion="-17.76923">
           <folding>
-            <marker date="1356960950412" expanded="true" signature="1524:1776" placeholder="..." />
-            <marker date="1356960950412" expanded="true" signature="1617:1645" placeholder="..." />
-            <element signature="tag#div#0;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#1;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#2;tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+            <marker date="1357039971833" expanded="true" signature="1524:1776" placeholder="..." />
+            <marker date="1357039971833" expanded="true" signature="1617:1645" placeholder="..." />
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#hgroup#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/screen.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="25" selection-start="756" selection-end="756" vertical-scroll-proportion="0.16978776">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="535" column="35" selection-start="17061" selection-end="17061" vertical-scroll-proportion="-1.7575758">
+          <folding>
+            <marker date="1357042460433" expanded="true" signature="1524:1776" placeholder="..." />
+            <marker date="1357042460433" expanded="true" signature="1617:1645" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="776" column="29" selection-start="22797" selection-end="22797" vertical-scroll-proportion="0.42633638">
+          <folding>
+            <marker date="1357042688236" expanded="true" signature="1524:1776" placeholder="..." />
+            <marker date="1357042688236" expanded="true" signature="1617:1645" placeholder="..." />
           </folding>
         </state>
       </provider>

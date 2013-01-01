@@ -15,16 +15,12 @@ body {
 .hidden {
   display: none; }
 
-#wrapper, section {
+#wrapper, section, footer {
   width: 960px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
   display: table; }
-
-footer {
-  display: table-row;
-  width: 960px; }
 
 #site-header {
   background: #444444;
@@ -197,8 +193,6 @@ a.reply-button {
           margin: 2px auto; }
         #row1 #signing div form #fb-login {
           background: url("../img/fb-login.png"); }
-        #row1 #signing div form #g-login {
-          background: url("../img/g-login.png"); }
     #row1 #signing #sign-in .triangle {
       margin: -108px 20px 0 0; }
     #row1 #signing #sign-up .triangle {

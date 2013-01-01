@@ -732,6 +732,7 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="js/vendor/jquery.animate-colors-min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
 
 <script>
 
@@ -773,7 +774,7 @@
 
         $('html, body').animate({
             scrollTop:$('#' + this.title).offset().top - 60
-        }, 2000);
+        }, 1500, 'easeOutBack');
 
         $('a.active').removeClass();
         $(this).addClass('active');
